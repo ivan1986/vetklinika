@@ -1,0 +1,23 @@
+Functions called:
+ fflush (4 times)
+ delete (11 times)
+ free (7 times)
+ new (11 times)
+ SysReallocMem (1275 times)
+ SysFreeMem (26211 times)
+ SysGetMem (26471 times)
+ lstrlenA (1 times)
+ lstrcpynA (4 times)
+ calloc (1 times)
+ strlen (75 times)
+ realloc (1 times)
+ strdup (1 times)
+ malloc (4 times)
+ memcpy (2 times)
+Resource types used:
+ object (11 allocs, 11 max)
+ memory block (26478 allocs, 4969 max)
+Modules used:
+ 00400000 04/03/2006 01:27:36 c:\Data\Мои
+ документы\CBuilder\base\Project1.exe
+==========================================

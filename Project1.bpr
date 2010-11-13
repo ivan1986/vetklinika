@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Project1.exe"/>
+    <OBJFILES value="Project1.obj Unit1.obj Unit2.obj print.obj am.obj lf.obj cut_date.obj 
+      preload_form.obj about.obj ab_firm.obj biohim_form.obj prep_form.obj 
+      otchet.obj vac_print.obj dop.obj inp_table_cld.obj ak.obj cg.obj 
+      vr_otch.obj uzi.obj"/>
+    <RESFILES value="Project1.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm Unit2.dfm print.dfm am.dfm lf.dfm cut_date.dfm 
+      preload_form.dfm ab_firm.dfm biohim_form.dfm prep_form.dfm otchet.dfm 
+      vac_print.dfm dop.dfm inp_table_cld.dfm ak.dfm cg.dfm vr_otch.dfm uzi.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dsnap.lib dsnapcon.lib RxBDE6.lib RxCtl6.lib RxDB6.lib bdertl.lib qrpt.lib 
+      vclx.lib adortl.lib vcldb.lib dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib vcldb.lib adortl.lib vclx.lib qrpt.lib 
+      bdertl.lib RxDB6.lib RxCtl6.lib RxBDE6.lib dsnapcon.lib dsnap.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Project1.cpp"/>
+    <INCLUDEPATH value="$(BCB)\Lib\Rx\units;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;h:\Мои документы\CBuilder\base&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;$(BCB)\Lib\Rx\units;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;h:\Мои документы\CBuilder\base&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\Lib\Rx\units -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I&quot;h:\Мои документы\CBuilder\base&quot; -I$(BCB)\include -I$(BCB)\include\vcl 
+      -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Project1.res" FORMNAME="" UNITNAME="Project1.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project1.cpp" FORMNAME="" UNITNAME="Project1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="Form1" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="Form2" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="print.cpp" FORMNAME="print_form" UNITNAME="print" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="am.cpp" FORMNAME="am_form" UNITNAME="am" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lf.cpp" FORMNAME="lf_form" UNITNAME="lf" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cut_date.cpp" FORMNAME="op_form" UNITNAME="cut_date" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="preload_form.cpp" FORMNAME="preload" UNITNAME="preload_form" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ab_firm.cpp" FORMNAME="AboutBox" UNITNAME="ab_firm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="biohim_form.cpp" FORMNAME="biohim" UNITNAME="biohim_form" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="prep_form.cpp" FORMNAME="prep_frm" UNITNAME="prep_form" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="otchet.cpp" FORMNAME="otch_form" UNITNAME="otchet" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vac_print.cpp" FORMNAME="vac_prn" UNITNAME="vac_print" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dop.cpp" FORMNAME="dop_form" UNITNAME="dop" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="inp_table_cld.cpp" FORMNAME="inp_table" UNITNAME="inp_table_cld" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ak.cpp" FORMNAME="ak_form" UNITNAME="ak" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cg.cpp" FORMNAME="cg_form" UNITNAME="cg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project1.todo" FORMNAME="" UNITNAME="Project1.todo" CONTAINERID="ToDo" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vr_otch.cpp" FORMNAME="vrach_otch" UNITNAME="vr_otch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uzi.cpp" FORMNAME="uz_form" UNITNAME="uzi" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+c:\program files\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX Database Components
+C:\Program Files\Borland\CBuilder6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=$(BCB)\Lib\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=$(BCB)\Projects\Lib;$(BCB)\Lib\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\Projects\Lib;$(BCB)\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
