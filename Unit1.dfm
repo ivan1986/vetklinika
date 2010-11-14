@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 80
-  Top = 6
+  Left = 83
+  Top = 17
   Width = 1030
   Height = 738
   Caption = #1046#1091#1088#1085#1072#1083#1099
@@ -589,7 +589,7 @@ object Form1: TForm1
         OnExit = gridExit
         OnKeyUp = CtrlGridKeyUp
         OnPaintPanel = gridPaintPanel
-        object Shape1: TShape
+        object grid_shape: TShape
           Left = 0
           Top = 0
           Width = 676
@@ -600,22 +600,6 @@ object Form1: TForm1
           Pen.Mode = pmNop
           Pen.Style = psClear
           Pen.Width = 0
-        end
-        object Label1: TLabel
-          Left = 5
-          Top = 5
-          Width = 11
-          Height = 13
-          Caption = #8470
-          Transparent = True
-        end
-        object Label2: TLabel
-          Left = 70
-          Top = 5
-          Width = 48
-          Height = 13
-          Caption = #1055#1086#1089#1090#1091#1087#1080#1083
-          Transparent = True
         end
         object Label3: TLabel
           Left = 200
@@ -685,9 +669,9 @@ object Form1: TForm1
           Pen.Width = 0
         end
         object nomf: TDBText
-          Left = 24
-          Top = 5
-          Width = 41
+          Left = 3
+          Top = 4
+          Width = 105
           Height = 17
           Alignment = taRightJustify
           DataField = 'npp'
@@ -934,25 +918,25 @@ object Form1: TForm1
         AllowInsert = False
         ColCount = 1
         DataSource = DS
-        PanelHeight = 71
+        PanelHeight = 250
         PanelWidth = 676
         TabOrder = 0
-        RowCount = 7
+        RowCount = 2
         OnExit = grd_vacExit
         OnKeyUp = CtrlGridKeyUp
         OnPaintPanel = gridPaintPanel
-        object Shape2: TShape
+        object grd_vac_shape: TShape
           Left = 0
           Top = 0
           Width = 676
-          Height = 60
+          Height = 79
           Align = alTop
           Pen.Mode = pmNop
         end
         object vacn: TDBText
-          Left = 0
-          Top = 10
-          Width = 35
+          Left = 3
+          Top = 7
+          Width = 93
           Height = 15
           Alignment = taRightJustify
           DataField = 'npp'
@@ -961,9 +945,9 @@ object Form1: TForm1
         end
         object Shape3: TShape
           Left = 0
-          Top = 60
+          Top = 79
           Width = 676
-          Height = 11
+          Height = 171
           Align = alClient
           Brush.Color = cl3DDkShadow
           Pen.Width = 0
@@ -987,16 +971,32 @@ object Form1: TForm1
           Transparent = True
         end
         object Label38: TLabel
-          Left = 24
-          Top = 32
-          Width = 35
+          Left = 11
+          Top = 58
+          Width = 65
           Height = 13
-          Caption = #1054#1089#1054#1090#1084
+          Caption = #1054#1089#1086#1073#1099#1077' '#1086#1090#1084'.'
+          Transparent = True
+        end
+        object Label41: TLabel
+          Left = 452
+          Top = 58
+          Width = 24
+          Height = 13
+          Caption = #1042#1088#1072#1095
+          Transparent = True
+        end
+        object Label19: TLabel
+          Left = 9
+          Top = 35
+          Width = 26
+          Height = 13
+          Caption = #1044#1072#1090#1072
           Transparent = True
         end
         object datevac: TDBEdit
           Left = 40
-          Top = 6
+          Top = 30
           Width = 57
           Height = 21
           DataField = 'date'
@@ -1018,7 +1018,7 @@ object Form1: TForm1
           Left = 105
           Top = 6
           Width = 212
-          Height = 48
+          Height = 69
           DataField = 'vlad'
           DataSource = DS
           TabOrder = 1
@@ -1029,7 +1029,7 @@ object Form1: TForm1
           Left = 319
           Top = 6
           Width = 128
-          Height = 48
+          Height = 69
           DataField = 'zver'
           DataSource = DS
           TabOrder = 2
@@ -1048,8 +1048,8 @@ object Form1: TForm1
           OnChange = propfChange
         end
         object DBCheckBox1: TDBCheckBox
-          Left = 72
-          Top = 32
+          Left = 81
+          Top = 57
           Width = 15
           Height = 15
           Alignment = taLeftJustify
@@ -1058,6 +1058,16 @@ object Form1: TForm1
           TabOrder = 5
           ValueChecked = 'True'
           ValueUnchecked = 'False'
+        end
+        object RxDBLookupCombo2: TRxDBLookupCombo
+          Left = 479
+          Top = 55
+          Width = 190
+          Height = 21
+          DropDownCount = 8
+          DataField = 'vrach'
+          DataSource = DS
+          TabOrder = 6
         end
       end
       object header: TPanel
@@ -1095,24 +1105,10 @@ object Form1: TForm1
           Height = 13
           Caption = #1044#1072#1085#1085#1099#1077' '#1086' '#1078#1080#1074#1086#1090#1085#1086#1084
         end
-        object Label18: TLabel
-          Left = 16
-          Top = 15
-          Width = 11
-          Height = 13
-          Caption = #8470
-        end
-        object Label19: TLabel
-          Left = 40
-          Top = 15
-          Width = 26
-          Height = 13
-          Caption = #1044#1072#1090#1072
-        end
         object Label20: TLabel
           Left = 104
           Top = 16
-          Width = 108
+          Width = 107
           Height = 13
           Caption = #1044#1072#1085#1085#1099#1077' '#1086' '#1074#1083#1072#1076#1077#1083#1100#1094#1077
         end
@@ -2519,6 +2515,18 @@ object Form1: TForm1
     end
     object vactdie: TBooleanField
       FieldName = 'die'
+    end
+    object vactvrach_id: TIntegerField
+      FieldName = 'vrach_id'
+    end
+    object vactvrach: TStringField
+      FieldKind = fkLookup
+      FieldName = 'vrach'
+      LookupDataSet = vrachi
+      LookupKeyFields = 'id'
+      LookupResultField = 'name'
+      KeyFields = 'vrach_id'
+      Lookup = True
     end
   end
   object vrachi: TADOTable

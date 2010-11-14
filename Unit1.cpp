@@ -482,7 +482,7 @@ void __fastcall TForm1::fltExit(TObject *Sender)
 
 void __fastcall TForm1::TabSheet1Resize(TObject *Sender)
 {
-    grid->RowCount=grid->Height/(Shape1->Height+1);
+    grid->RowCount=grid->Height/(grid_shape->Height+1);
 }
 //---------------------------------------------------------------------------
 
@@ -739,6 +739,7 @@ void __fastcall TForm1::vsalesnfButtonClick(TObject *Sender)
 void __fastcall TForm1::vactAfterInsert(TDataSet *DataSet)
 {
     DataSet->FieldByName("date")->AsDateTime = Date();
+    DataSet->FieldByName("vrach_id")->AsInteger = 0;
     DataSet->FieldByName("prep_id")->AsInteger = 0;
     DataSet->FieldByName("die")->AsBoolean = false;
 
@@ -914,7 +915,7 @@ void __fastcall TForm1::MenuItem2Click(TObject *Sender)
 
 void __fastcall TForm1::TabSheet2Resize(TObject *Sender)
 {
-    grd_vac->RowCount=grd_vac->Height/64;
+    grd_vac->RowCount=grd_vac->Height/(grd_vac_shape->Height+1);
 }
 //---------------------------------------------------------------------------
 
@@ -1187,6 +1188,7 @@ void __fastcall TForm1::decsep(TObject *Sender, char &Key)
     if (Key == '.' || Key == ',')
         Key = DecimalSeparator;
 }
+
 //---------------------------------------------------------------------------
 // вставляет новую запись в конец журнала и копирует фио,
 // адрес и данные о животном

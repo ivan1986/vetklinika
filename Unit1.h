@@ -33,9 +33,7 @@ class TForm1 : public TForm
 __published:	// IDE-managed Components
     TDataSource *ambulatoru;
     TDBCtrlGrid *grid;
-    TLabel *Label1;
     TDBEdit *dat;
-    TLabel *Label2;
     TPanel *dopanel;
     TLabel *Label3;
     TDBEdit *vld;
@@ -67,7 +65,7 @@ __published:	// IDE-managed Components
     TEdit *adrf;
     TLabel *Label16;
     TShape *delim;
-    TShape *Shape1;
+    TShape *grid_shape;
     TButton *lf_btn;
     TButton *am_btn;
     TPanel *top_panel;
@@ -78,8 +76,6 @@ __published:	// IDE-managed Components
     TPageControl *PageControl1;
     TTabSheet *TabSheet1;
     TTabSheet *TabSheet2;
-    TLabel *Label18;
-    TLabel *Label19;
     TLabel *Label20;
     TLabel *Label21;
     TLabel *Label22;
@@ -97,7 +93,7 @@ __published:	// IDE-managed Components
     TMenuItem *MenuItem2;
     TMenuItem *N3;
     TTimer *tmr;
-    TShape *Shape2;
+    TShape *grd_vac_shape;
     TShape *Shape3;
     TPanel *header;
     TTabSheet *TabSheet3;
@@ -336,6 +332,11 @@ __published:	// IDE-managed Components
         TButton *files_btn;
     TFloatField *lec_svdoza;
     TFloatField *vlec_svdoza;
+    TLabel *Label41;
+    TIntegerField *vactvrach_id;
+    TStringField *vactvrach;
+    TRxDBLookupCombo *RxDBLookupCombo2;
+    TLabel *Label19;
     void __fastcall tableAfterScroll(TDataSet *DataSet);
     void __fastcall N2Click(TObject *Sender);
     void __fastcall tableAfterInsert(TDataSet *DataSet);
