@@ -1,11 +1,11 @@
 object cg_form: Tcg_form
-  Left = 515
-  Top = -3
+  Left = 94
+  Top = 6
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1062#1080#1090#1086'-'#1075#1080#1089#1090#1086
   ClientHeight = 744
-  ClientWidth = 413
+  ClientWidth = 412
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -129,93 +129,6 @@ object cg_form: Tcg_form
     Font.Height = -19
     Font.Name = 'MS Sans Serif'
     Font.Style = []
-    ParentFont = False
-    Transparent = True
-  end
-  object Label6: TLabel
-    Left = 247
-    Top = 85
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'cgtel3'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label7: TLabel
-    Left = 247
-    Top = 57
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'cgtel1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label8: TLabel
-    Left = 133
-    Top = 36
-    Width = 254
-    Height = 19
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label9: TLabel
-    Left = 133
-    Top = 8
-    Width = 254
-    Height = 22
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Image1: TImage
-    Left = 8
-    Top = 8
-    Width = 120
-    Height = 119
-    AutoSize = True
-  end
-  object Label1: TLabel
-    Left = 247
-    Top = 71
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'cgtel2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsItalic]
     ParentFont = False
     Transparent = True
   end
@@ -361,130 +274,6 @@ object cg_form: Tcg_form
         2034.64583333333
         2971.27083333333)
       BandType = rbTitle
-      object QRLabel3: TQRLabel
-        Left = 180
-        Top = 71
-        Width = 263
-        Height = 23
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          60.8541666666667
-          476.25
-          187.854166666667
-          695.854166666667)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel2: TQRLabel
-        Left = 179
-        Top = 43
-        Width = 265
-        Height = 23
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          60.8541666666667
-          473.604166666667
-          113.770833333333
-          701.145833333333)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -19
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 14
-      end
-      object QRLabel4: TQRLabel
-        Left = 283
-        Top = 91
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          748.770833333333
-          240.770833333333
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'cgtel1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel5: TQRLabel
-        Left = 282
-        Top = 111
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          746.125
-          293.6875
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'cgtel2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
       object QRLabel6: TQRLabel
         Left = 222
         Top = 151
@@ -515,53 +304,6 @@ object cg_form: Tcg_form
         Transparent = False
         WordWrap = True
         FontSize = 14
-      end
-      object QRImage1: TQRImage
-        Left = 17
-        Top = 35
-        Width = 153
-        Height = 153
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          404.8125
-          44.9791666666667
-          92.6041666666667
-          404.8125)
-      end
-      object QRLabel1: TQRLabel
-        Left = 282
-        Top = 131
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          746.125
-          346.604166666667
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'cgtel3'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
       end
       object ot_l: TQRLabel
         Left = 185
@@ -1040,6 +782,22 @@ object cg_form: Tcg_form
         Transparent = False
         WordWrap = True
         FontSize = 10
+      end
+      object head: TQRImage
+        Left = 8
+        Top = 5
+        Width = 440
+        Height = 140
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          370.416666666667
+          21.1666666666667
+          13.2291666666667
+          1164.16666666667)
       end
     end
   end

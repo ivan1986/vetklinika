@@ -37,15 +37,15 @@
     <USERDEFINES value=""/>
     <SYSDEFINES value="NO_STRICT"/>
     <MAINSOURCE value="Project1.cpp"/>
-    <INCLUDEPATH value="$(BCB)\Lib\Rx\units;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;h:\Мои документы\CBuilder\base&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="$(BCB)\Projects\Lib;$(BCB)\Lib\Rx\units;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;h:\Мои документы\CBuilder\base&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Rx\units&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;&quot;C:\Program Files\Borland\CBuilder6\Rx\units&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I$(BCB)\Lib\Rx\units -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
-      -I&quot;h:\Мои документы\CBuilder\base&quot; -I$(BCB)\include -I$(BCB)\include\vcl 
-      -src_suffix cpp -boa"/>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Rx\units&quot; 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -boa"/>
     <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
     <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
     <RFLAGS value=""/>
@@ -115,19 +115,23 @@ ProductVersion=1.0.0.0
 Comments=
 
 [Excluded Packages]
-c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+C:\PROGRA~1\Borland\CBUILD~1\Projects\Bpl\RxCtl6.bpl=RX Library Component and Tools Package
+C:\PROGRA~1\Borland\CBUILD~1\Projects\Bpl\RxBDE6.bpl=RX Library BDE DB Component Package
+C:\PROGRA~1\Borland\CBUILD~1\Projects\Bpl\RxDB6.bpl=RX Library DB Component Package
 c:\program files\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX Database Components
 C:\Program Files\Borland\CBuilder6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
 
 [HistoryLists\hlIncludePath]
-Count=2
-Item0=$(BCB)\Lib\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\include;$(BCB)\include\vcl
-Item1=$(BCB)\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\include;$(BCB)\include\vcl
+Count=3
+Item0=C:\Program Files\Borland\CBuilder6\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\Lib\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
-Count=2
-Item0=$(BCB)\Projects\Lib;$(BCB)\Lib\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\lib\obj;$(BCB)\lib
-Item1=$(BCB)\Projects\Lib;$(BCB)\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\lib\obj;$(BCB)\lib
+Count=3
+Item0=$(BCB)\Projects\Lib;C:\Program Files\Borland\CBuilder6\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\Projects\Lib;$(BCB)\Lib\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\Projects\Lib;$(BCB)\Rx\units;C:\Program Files\Borland\CBuilder6\Projects;h:\Мои документы\CBuilder\base;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
@@ -161,5 +165,10 @@ LinkCGLIB=0
 AddServerUnit=1
 AddClientUnit=1
 PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
   </IDEOPTIONS>
 </PROJECT>

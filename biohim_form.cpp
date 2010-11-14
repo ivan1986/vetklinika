@@ -15,19 +15,7 @@ __fastcall Tbiohim::Tbiohim(TComponent* Owner)
     : TForm(Owner)
 {
 
-    QRImage1->Canvas->Draw(0,0,Form1->logo_b->Picture->Graphic);
-    Image1->Canvas->Draw(0,0,Form1->logo_b->Picture->Graphic);
-    QRLabel2->Caption=Form1->fname1->Caption;
-    QRLabel3->Caption=Form1->fname2->Caption;
-    QRLabel4->Caption=Form1->amtel1->Caption;
-    QRLabel5->Caption=Form1->amtel2->Caption;
-    QRLabel1->Caption=Form1->amtel3->Caption;
-
-    Label9->Caption=Form1->fname1->Caption;
-    Label8->Caption=Form1->fname2->Caption;
-    Label7->Caption=Form1->amtel1->Caption;
-    Label1->Caption=Form1->amtel2->Caption;
-    Label6->Caption=Form1->amtel3->Caption;
+    head->Canvas->Draw(0,0,Form1->logo_s->Picture->Graphic);
 
     TDate x(Form1->table->FieldByName("date")->AsDateTime);
     d->Text=x.FormatString("d");

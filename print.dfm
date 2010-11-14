@@ -1,7 +1,7 @@
 object print_form: Tprint_form
   Left = 329
   Top = 10
-  Width = 616
+  Width = 604
   Height = 721
   Caption = #1055#1077#1095#1072#1090#1100
   Color = clBtnFace
@@ -79,149 +79,25 @@ object print_form: Tprint_form
         624.416666666667
         2971.27083333333)
       BandType = rbTitle
-      object QRImage1: TQRImage
-        Left = 26
-        Top = 47
-        Width = 105
-        Height = 105
+      object head: TQRImage
+        Left = 6
+        Top = 7
+        Width = 515
+        Height = 140
         Frame.Color = clBlack
         Frame.DrawTop = False
         Frame.DrawBottom = False
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          277.8125
-          68.7916666666667
-          124.354166666667
-          277.8125)
-      end
-      object QRLabel2: TQRLabel
-        Left = 228
-        Top = 53
-        Width = 216
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          603.25
-          140.229166666667
-          571.5)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel3: TQRLabel
-        Left = 228
-        Top = 73
-        Width = 216
-        Height = 19
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          50.2708333333333
-          603.25
-          193.145833333333
-          571.5)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -15
-        Font.Name = 'Arial'
-        Font.Style = [fsBold, fsUnderline]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 11
-      end
-      object QRLabel4: TQRLabel
-        Left = 228
-        Top = 91
-        Width = 216
-        Height = 16
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          42.3333333333333
-          603.25
-          240.770833333333
-          571.5)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'podp1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = [fsItalic]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 9
-      end
-      object QRLabel5: TQRLabel
-        Left = 228
-        Top = 105
-        Width = 216
-        Height = 16
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          42.3333333333333
-          603.25
-          277.8125
-          571.5)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'podp2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = [fsItalic]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 9
+          370.416666666667
+          15.875
+          18.5208333333333
+          1362.60416666667)
       end
       object QRLabel6: TQRLabel
         Left = 309
-        Top = 121
+        Top = 106
         Width = 42
         Height = 19
         Frame.Color = clBlack
@@ -232,7 +108,7 @@ object print_form: Tprint_form
         Size.Values = (
           50.2708333333333
           817.5625
-          320.145833333333
+          280.458333333333
           111.125)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -252,7 +128,7 @@ object print_form: Tprint_form
       end
       object QRShape1: TQRShape
         Left = 153
-        Top = 193
+        Top = 178
         Width = 366
         Height = 1
         Frame.Color = clBlack
@@ -263,14 +139,14 @@ object print_form: Tprint_form
         Size.Values = (
           2.64583333333333
           404.8125
-          510.645833333333
+          470.958333333333
           968.375)
         Pen.Color = clGray
         Shape = qrsHorLine
       end
       object QRShape5: TQRShape
         Left = 89
-        Top = 217
+        Top = 202
         Width = 430
         Height = 1
         Frame.Color = clBlack
@@ -281,14 +157,14 @@ object print_form: Tprint_form
         Size.Values = (
           2.64583333333333
           235.479166666667
-          574.145833333333
+          534.458333333333
           1137.70833333333)
         Pen.Color = clGray
         Shape = qrsHorLine
       end
       object QRDBText10: TQRDBText
         Left = 89
-        Top = 200
+        Top = 185
         Width = 430
         Height = 17
         Frame.Color = clBlack
@@ -299,7 +175,7 @@ object print_form: Tprint_form
         Size.Values = (
           44.9791666666667
           235.479166666667
-          529.166666666667
+          489.479166666667
           1137.70833333333)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -320,7 +196,7 @@ object print_form: Tprint_form
       end
       object QRDBText12: TQRDBText
         Left = 154
-        Top = 175
+        Top = 160
         Width = 365
         Height = 17
         Frame.Color = clBlack
@@ -331,7 +207,7 @@ object print_form: Tprint_form
         Size.Values = (
           44.9791666666667
           407.458333333333
-          463.020833333333
+          423.333333333333
           965.729166666667)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -352,7 +228,7 @@ object print_form: Tprint_form
       end
       object QRLabel12: TQRLabel
         Left = 28
-        Top = 176
+        Top = 160
         Width = 102
         Height = 17
         Frame.Color = clBlack
@@ -363,7 +239,7 @@ object print_form: Tprint_form
         Size.Values = (
           44.9791666666667
           74.0833333333333
-          465.666666666667
+          423.333333333333
           269.875)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -383,7 +259,7 @@ object print_form: Tprint_form
       end
       object QRLabel13: TQRLabel
         Left = 28
-        Top = 200
+        Top = 185
         Width = 48
         Height = 17
         Frame.Color = clBlack
@@ -394,7 +270,7 @@ object print_form: Tprint_form
         Size.Values = (
           44.9791666666667
           74.0833333333333
-          529.166666666667
+          489.479166666667
           127)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -414,7 +290,7 @@ object print_form: Tprint_form
       end
       object ot_l: TQRLabel
         Left = 220
-        Top = 144
+        Top = 129
         Width = 225
         Height = 17
         Frame.Color = clBlack
@@ -425,7 +301,7 @@ object print_form: Tprint_form
         Size.Values = (
           44.9791666666667
           582.083333333333
-          381
+          341.3125
           595.3125)
         Alignment = taCenter
         AlignToBand = False
@@ -534,7 +410,7 @@ object print_form: Tprint_form
         DataField = 'oper'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -566,7 +442,7 @@ object print_form: Tprint_form
         DataField = 'st'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -597,7 +473,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -694,7 +570,7 @@ object print_form: Tprint_form
         DataField = 'name'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -726,7 +602,7 @@ object print_form: Tprint_form
         DataField = 'count'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -755,7 +631,7 @@ object print_form: Tprint_form
         AutoStretch = False
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         Color = clWhite
@@ -769,18 +645,18 @@ object print_form: Tprint_form
       object QRLabel10: TQRLabel
         Left = 386
         Top = 3
-        Width = 7
-        Height = 17
+        Width = 8
+        Height = 18
         Frame.Color = clBlack
         Frame.DrawTop = False
         Frame.DrawBottom = False
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          44.9791666666667
+          47.625
           1021.29166666667
           7.9375
-          18.5208333333333)
+          21.1666666666667)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -789,7 +665,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -820,7 +696,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -985,7 +861,7 @@ object print_form: Tprint_form
         DataField = 'name'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -996,18 +872,18 @@ object print_form: Tprint_form
       object QRLabel1: TQRLabel
         Left = 386
         Top = 3
-        Width = 7
-        Height = 17
+        Width = 8
+        Height = 18
         Frame.Color = clBlack
         Frame.DrawTop = False
         Frame.DrawBottom = False
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          44.9791666666667
+          47.625
           1021.29166666667
           7.9375
-          18.5208333333333)
+          21.1666666666667)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -1016,7 +892,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1048,7 +924,7 @@ object print_form: Tprint_form
         DataField = 'doza'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1080,7 +956,7 @@ object print_form: Tprint_form
         DataField = 'st'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1111,7 +987,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1276,7 +1152,7 @@ object print_form: Tprint_form
         DataField = 'prep'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1308,7 +1184,7 @@ object print_form: Tprint_form
         DataField = 'st'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1339,7 +1215,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1436,7 +1312,7 @@ object print_form: Tprint_form
         DataField = 'name'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1447,18 +1323,18 @@ object print_form: Tprint_form
       object QRLabel14: TQRLabel
         Left = 386
         Top = 3
-        Width = 7
-        Height = 17
+        Width = 8
+        Height = 18
         Frame.Color = clBlack
         Frame.DrawTop = False
         Frame.DrawBottom = False
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          44.9791666666667
+          47.625
           1021.29166666667
           7.9375
-          18.5208333333333)
+          21.1666666666667)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -1467,7 +1343,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1499,7 +1375,7 @@ object print_form: Tprint_form
         DataField = 'count'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1531,7 +1407,7 @@ object print_form: Tprint_form
         DataField = 'st'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1562,7 +1438,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1705,7 +1581,7 @@ object print_form: Tprint_form
       object QRLabel7: TQRLabel
         Left = 15
         Top = 8
-        Width = 39
+        Width = 40
         Height = 19
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -1716,7 +1592,7 @@ object print_form: Tprint_form
           50.2708333333333
           39.6875
           21.1666666666667
-          103.1875)
+          105.833333333333)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -1725,7 +1601,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1775,7 +1651,7 @@ object print_form: Tprint_form
         DataField = 'sum'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1806,7 +1682,7 @@ object print_form: Tprint_form
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
-        Font.Height = -14
+        Font.Height = -15
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
@@ -1893,7 +1769,6 @@ object print_form: Tprint_form
     end
   end
   object Qprep: TADOQuery
-    Active = True
     Connection = Form1.connect
     CursorType = ctStatic
     Parameters = <>
@@ -1910,8 +1785,9 @@ object print_form: Tprint_form
       FieldName = 'name'
       Size = 50
     end
-    object Qprepdoza: TWideStringField
+    object Qprepdoza: TFloatField
       FieldName = 'doza'
+      Precision = 2
     end
     object Qprepst: TIntegerField
       FieldName = 'st'

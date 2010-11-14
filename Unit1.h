@@ -102,13 +102,6 @@ __published:	// IDE-managed Components
     TPanel *header;
     TTabSheet *TabSheet3;
     TImage *logo_b;
-    TLabel *amtel3;
-    TLabel *amtel2;
-    TLabel *amtel1;
-    TLabel *fname2;
-    TLabel *fname1;
-    TLabel *podp1;
-    TLabel *podp2;
     TImage *logo_s;
     TIntegerField *doptid;
     TWideStringField *doptprep;
@@ -173,7 +166,6 @@ __published:	// IDE-managed Components
     TLabel *Label29;
     TLabel *Label30;
     TIntegerField *lec_svst;
-    TWideStringField *lec_svdoza;
     TButton *fnd_btn;
     TRxDBComboEdit *mnman_namef;
     TRxDBComboEdit *lecnamef;
@@ -329,7 +321,6 @@ __published:	// IDE-managed Components
     TIntegerField *IntegerField6;
     TIntegerField *IntegerField7;
     TWideStringField *WideStringField3;
-    TWideStringField *WideStringField4;
     TIntegerField *IntegerField8;
     TDataSource *dsvlec_sv;
     TAutoIncField *vmn_svvacnomer;
@@ -342,6 +333,9 @@ __published:	// IDE-managed Components
     TButton *cpbtn;
     TButton *ekg_btn;
     TButton *uzi_btn;
+        TButton *files_btn;
+    TFloatField *lec_svdoza;
+    TFloatField *vlec_svdoza;
     void __fastcall tableAfterScroll(TDataSet *DataSet);
     void __fastcall N2Click(TObject *Sender);
     void __fastcall tableAfterInsert(TDataSet *DataSet);
@@ -420,6 +414,9 @@ __published:	// IDE-managed Components
     void __fastcall cpbtnClick(TObject *Sender);
     void __fastcall ekg_btnClick(TObject *Sender);
     void __fastcall uzi_btnClick(TObject *Sender);
+    void __fastcall files_btnClick(TObject *Sender);
+    bool __fastcall createDir(AnsiString dir);
+    void __fastcall decsep(TObject *Sender, char &Key);
 private:	// User declarations
     int deleted_npp;
 public:		// User declarations

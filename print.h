@@ -19,11 +19,6 @@ class Tprint_form : public TForm
 __published:	// IDE-managed Components
     TQuickRep *title;
     TQRBand *TitleBand1;
-    TQRImage *QRImage1;
-    TQRLabel *QRLabel2;
-    TQRLabel *QRLabel3;
-    TQRLabel *QRLabel4;
-    TQRLabel *QRLabel5;
     TQRLabel *QRLabel6;
     TQRCompositeReport *cr;
     TDataSource *tbl;
@@ -74,7 +69,6 @@ __published:	// IDE-managed Components
     TIntegerField *Qmnmancount;
     TADOQuery *Qprep;
     TWideStringField *Qprepname;
-    TWideStringField *Qprepdoza;
     TIntegerField *Qprepst;
     TQuickRep *sales;
     TQRBand *DetailBand1;
@@ -96,6 +90,8 @@ __published:	// IDE-managed Components
     TQRLabel *QRLabel18;
     TQRLabel *QRLabel20;
     TQRLabel *QRLabel21;
+    TFloatField *Qprepdoza;
+    TQRImage *head;
     void __fastcall FormCreate(TObject *Sender);
     void __fastcall crAddReports(TObject *Sender);
 private:	// User declarations

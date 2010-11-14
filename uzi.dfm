@@ -1,10 +1,10 @@
 object uz_form: Tuz_form
-  Left = 376
-  Top = 108
+  Left = 248
+  Top = 28
   BorderStyle = bsSingle
   Caption = #1059#1047#1048
   ClientHeight = 751
-  ClientWidth = 492
+  ClientWidth = 490
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -24,70 +24,6 @@ object uz_form: Tuz_form
     Top = 1
     Width = 486
     Height = 719
-  end
-  object Label9: TLabel
-    Left = 173
-    Top = 8
-    Width = 254
-    Height = 22
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label8: TLabel
-    Left = 173
-    Top = 36
-    Width = 254
-    Height = 19
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label7: TLabel
-    Left = 327
-    Top = 57
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'amtel1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Arial'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label6: TLabel
-    Left = 327
-    Top = 85
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'amtel3'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Arial'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
   end
   object Label5: TLabel
     Left = 166
@@ -158,29 +94,6 @@ object uz_form: Tuz_form
     Font.Style = [fsItalic]
     ParentFont = False
     Transparent = True
-  end
-  object Label1: TLabel
-    Left = 327
-    Top = 71
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'amtel2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Arial'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Image1: TImage
-    Left = 8
-    Top = 8
-    Width = 120
-    Height = 119
-    AutoSize = True
   end
   object Shape1: TShape
     Left = 112
@@ -652,129 +565,21 @@ object uz_form: Tuz_form
         2394.47916666667
         2100.79166666667)
       BandType = rbTitle
-      object QRLabel3: TQRLabel
-        Left = 324
-        Top = 71
-        Width = 263
-        Height = 23
+      object head: TQRImage
+        Left = 24
+        Top = 16
+        Width = 515
+        Height = 140
         Frame.Color = clBlack
         Frame.DrawTop = False
         Frame.DrawBottom = False
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          60.8541666666667
-          857.25
-          187.854166666667
-          695.854166666667)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel2: TQRLabel
-        Left = 323
-        Top = 43
-        Width = 265
-        Height = 23
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          60.8541666666667
-          854.604166666667
-          113.770833333333
-          701.145833333333)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -19
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 14
-      end
-      object QRLabel4: TQRLabel
-        Left = 611
-        Top = 91
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          1616.60416666667
-          240.770833333333
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'amtel1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel5: TQRLabel
-        Left = 610
-        Top = 111
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          1613.95833333333
-          293.6875
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'amtel2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
+          370.416666666667
+          63.5
+          42.3333333333333
+          1362.60416666667)
       end
       object QRLabel6: TQRLabel
         Left = 310
@@ -806,53 +611,6 @@ object uz_form: Tuz_form
         Transparent = False
         WordWrap = True
         FontSize = 14
-      end
-      object QRImage1: TQRImage
-        Left = 25
-        Top = 35
-        Width = 153
-        Height = 153
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          404.8125
-          66.1458333333333
-          92.6041666666667
-          404.8125)
-      end
-      object QRLabel1: TQRLabel
-        Left = 610
-        Top = 131
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          1613.95833333333
-          346.604166666667
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'amtel3'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
       end
       object QRLabel7: TQRLabel
         Left = 25

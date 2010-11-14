@@ -1,8 +1,8 @@
 object vac_prn: Tvac_prn
-  Left = 477
-  Top = 62
-  Width = 627
-  Height = 812
+  Left = 265
+  Top = 71
+  Width = 634
+  Height = 798
   Caption = #1055#1077#1095#1072#1090#1100' '#1074#1072#1082#1094#1080#1085#1072#1094#1080#1103
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -306,9 +306,25 @@ object vac_prn: Tvac_prn
         1018.64583333333
         2971.27083333333)
       BandType = rbTitle
+      object QRImage1: TQRImage
+        Left = 24
+        Top = 7
+        Width = 515
+        Height = 140
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          370.416666666667
+          63.5
+          18.5208333333333
+          1362.60416666667)
+      end
       object QRDBText10: TQRDBText
         Left = 96
-        Top = 193
+        Top = 204
         Width = 441
         Height = 41
         Frame.Color = clBlack
@@ -319,7 +335,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           108.479166666667
           254
-          510.645833333333
+          539.75
           1166.8125)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -340,7 +356,7 @@ object vac_prn: Tvac_prn
       end
       object QRDBText12: TQRDBText
         Left = 162
-        Top = 145
+        Top = 156
         Width = 375
         Height = 38
         Frame.Color = clBlack
@@ -351,7 +367,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           100.541666666667
           428.625
-          383.645833333333
+          412.75
           992.1875)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -372,7 +388,7 @@ object vac_prn: Tvac_prn
       end
       object QRShape5: TQRShape
         Left = 96
-        Top = 207
+        Top = 218
         Width = 440
         Height = 1
         Frame.Color = clBlack
@@ -383,14 +399,14 @@ object vac_prn: Tvac_prn
         Size.Values = (
           2.64583333333333
           254
-          547.6875
+          576.791666666667
           1164.16666666667)
         Pen.Color = clGray
         Shape = qrsHorLine
       end
       object QRShape1: TQRShape
         Left = 160
-        Top = 160
+        Top = 171
         Width = 376
         Height = 1
         Frame.Color = clBlack
@@ -401,14 +417,14 @@ object vac_prn: Tvac_prn
         Size.Values = (
           2.64583333333333
           423.333333333333
-          423.333333333333
+          452.4375
           994.833333333333)
         Pen.Color = clGray
         Shape = qrsHorLine
       end
       object QRLabel6: TQRLabel
         Left = 317
-        Top = 94
+        Top = 105
         Width = 42
         Height = 19
         Frame.Color = clBlack
@@ -419,7 +435,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           50.2708333333333
           838.729166666667
-          248.708333333333
+          277.8125
           111.125)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -437,133 +453,9 @@ object vac_prn: Tvac_prn
         WordWrap = True
         FontSize = 11
       end
-      object QRLabel5: TQRLabel
-        Left = 236
-        Top = 78
-        Width = 216
-        Height = 16
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          42.3333333333333
-          624.416666666667
-          206.375
-          571.5)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'podp2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = [fsItalic]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 9
-      end
-      object QRLabel4: TQRLabel
-        Left = 236
-        Top = 64
-        Width = 216
-        Height = 16
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          42.3333333333333
-          624.416666666667
-          169.333333333333
-          571.5)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'podp1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = [fsItalic]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 9
-      end
-      object QRLabel3: TQRLabel
-        Left = 236
-        Top = 46
-        Width = 216
-        Height = 19
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          50.2708333333333
-          624.416666666667
-          121.708333333333
-          571.5)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -15
-        Font.Name = 'Arial'
-        Font.Style = [fsBold, fsUnderline]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 11
-      end
-      object QRLabel2: TQRLabel
-        Left = 236
-        Top = 26
-        Width = 216
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          624.416666666667
-          68.7916666666667
-          571.5)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
       object QRLabel13: TQRLabel
         Left = 35
-        Top = 193
+        Top = 204
         Width = 48
         Height = 17
         Frame.Color = clBlack
@@ -574,7 +466,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           44.9791666666667
           92.6041666666667
-          510.645833333333
+          539.75
           127)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -594,7 +486,7 @@ object vac_prn: Tvac_prn
       end
       object QRLabel12: TQRLabel
         Left = 35
-        Top = 146
+        Top = 157
         Width = 114
         Height = 17
         Frame.Color = clBlack
@@ -605,7 +497,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           44.9791666666667
           92.6041666666667
-          386.291666666667
+          415.395833333333
           301.625)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -623,25 +515,9 @@ object vac_prn: Tvac_prn
         WordWrap = True
         FontSize = 10
       end
-      object QRImage1: TQRImage
-        Left = 25
-        Top = 25
-        Width = 105
-        Height = 105
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          277.8125
-          66.1458333333333
-          66.1458333333333
-          277.8125)
-      end
       object QRShape2: TQRShape
         Left = 160
-        Top = 178
+        Top = 189
         Width = 376
         Height = 1
         Frame.Color = clBlack
@@ -652,14 +528,14 @@ object vac_prn: Tvac_prn
         Size.Values = (
           2.64583333333333
           423.333333333333
-          470.958333333333
+          500.0625
           994.833333333333)
         Pen.Color = clGray
         Shape = qrsHorLine
       end
       object QRShape3: TQRShape
         Left = 96
-        Top = 226
+        Top = 237
         Width = 440
         Height = 1
         Frame.Color = clBlack
@@ -670,14 +546,14 @@ object vac_prn: Tvac_prn
         Size.Values = (
           2.64583333333333
           254
-          597.958333333333
+          627.0625
           1164.16666666667)
         Pen.Color = clGray
         Shape = qrsHorLine
       end
       object QRLabel1: TQRLabel
         Left = 33
-        Top = 329
+        Top = 340
         Width = 55
         Height = 17
         Frame.Color = clBlack
@@ -688,7 +564,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           44.9791666666667
           87.3125
-          870.479166666667
+          899.583333333333
           145.520833333333)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -708,7 +584,7 @@ object vac_prn: Tvac_prn
       end
       object QRDBText1: TQRDBText
         Left = 32
-        Top = 355
+        Top = 366
         Width = 425
         Height = 19
         Frame.Color = clBlack
@@ -719,7 +595,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           50.2708333333333
           84.6666666666667
-          939.270833333333
+          968.375
           1124.47916666667)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -740,7 +616,7 @@ object vac_prn: Tvac_prn
       end
       object QRLabel7: TQRLabel
         Left = 489
-        Top = 329
+        Top = 340
         Width = 32
         Height = 17
         Frame.Color = clBlack
@@ -751,7 +627,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           44.9791666666667
           1293.8125
-          870.479166666667
+          899.583333333333
           84.6666666666667)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -771,7 +647,7 @@ object vac_prn: Tvac_prn
       end
       object QRDBText2: TQRDBText
         Left = 460
-        Top = 355
+        Top = 366
         Width = 50
         Height = 19
         Frame.Color = clBlack
@@ -782,7 +658,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           50.2708333333333
           1217.08333333333
-          939.270833333333
+          968.375
           132.291666666667)
         Alignment = taRightJustify
         AlignToBand = False
@@ -803,7 +679,7 @@ object vac_prn: Tvac_prn
       end
       object QRLabel8: TQRLabel
         Left = 34
-        Top = 243
+        Top = 254
         Width = 144
         Height = 17
         Frame.Color = clBlack
@@ -814,7 +690,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           44.9791666666667
           89.9583333333333
-          642.9375
+          672.041666666667
           381)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -834,7 +710,7 @@ object vac_prn: Tvac_prn
       end
       object QRDBText3: TQRDBText
         Left = 34
-        Top = 266
+        Top = 277
         Width = 502
         Height = 57
         Frame.Color = clBlack
@@ -845,7 +721,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           150.8125
           89.9583333333333
-          703.791666666667
+          732.895833333333
           1328.20833333333)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -866,7 +742,7 @@ object vac_prn: Tvac_prn
       end
       object ot_l: TQRLabel
         Left = 228
-        Top = 118
+        Top = 129
         Width = 225
         Height = 17
         Frame.Color = clBlack
@@ -877,7 +753,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           44.9791666666667
           603.25
-          312.208333333333
+          341.3125
           595.3125)
         Alignment = taCenter
         AlignToBand = False
@@ -897,7 +773,7 @@ object vac_prn: Tvac_prn
       end
       object QRLabel25: TQRLabel
         Left = 512
-        Top = 355
+        Top = 366
         Width = 14
         Height = 19
         Frame.Color = clBlack
@@ -908,7 +784,7 @@ object vac_prn: Tvac_prn
         Size.Values = (
           50.2708333333333
           1354.66666666667
-          939.270833333333
+          968.375
           37.0416666666667)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -1862,6 +1738,22 @@ object vac_prn: Tvac_prn
         Pen.Color = clGray
         Shape = qrsHorLine
       end
+      object head: TQRImage
+        Left = 6
+        Top = 7
+        Width = 515
+        Height = 140
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          370.416666666667
+          15.875
+          18.5208333333333
+          1362.60416666667)
+      end
       object QRLabel9: TQRLabel
         Left = 15
         Top = 4
@@ -2147,7 +2039,6 @@ object vac_prn: Tvac_prn
     Top = 709
   end
   object Qprep: TADOQuery
-    Active = True
     Connection = Form1.connect
     CursorType = ctStatic
     Parameters = <>
@@ -2164,8 +2055,9 @@ object vac_prn: Tvac_prn
       FieldName = 'name'
       Size = 50
     end
-    object Qprepdoza: TWideStringField
+    object Qprepdoza: TFloatField
       FieldName = 'doza'
+      Precision = 2
     end
     object Qprepst: TIntegerField
       FieldName = 'st'

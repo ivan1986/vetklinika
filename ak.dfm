@@ -132,93 +132,6 @@ object ak_form: Tak_form
     ParentFont = False
     Transparent = True
   end
-  object Label6: TLabel
-    Left = 247
-    Top = 85
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'aktel3'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label7: TLabel
-    Left = 247
-    Top = 57
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'aktel1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label8: TLabel
-    Left = 133
-    Top = 36
-    Width = 254
-    Height = 19
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label9: TLabel
-    Left = 133
-    Top = 8
-    Width = 254
-    Height = 22
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Image1: TImage
-    Left = 8
-    Top = 8
-    Width = 120
-    Height = 119
-    AutoSize = True
-  end
-  object Label1: TLabel
-    Left = 247
-    Top = 71
-    Width = 140
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'aktel2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
   object Image2: TImage
     Left = 6
     Top = 227
@@ -1683,6 +1596,22 @@ object ak_form: Tak_form
         1971.14583333333
         2971.27083333333)
       BandType = rbTitle
+      object head: TQRImage
+        Left = 7
+        Top = 5
+        Width = 440
+        Height = 140
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          370.416666666667
+          18.5208333333333
+          13.2291666666667
+          1164.16666666667)
+      end
       object QRImage2: TQRImage
         Left = 29
         Top = 272
@@ -3074,130 +3003,6 @@ object ak_form: Tak_form
           547FE1617FD42FFF00263FFB1AC4F12F8C7FB574A48FEC1E505995B226DDFC2D
           FECD007FFFD9}
       end
-      object QRLabel3: TQRLabel
-        Left = 180
-        Top = 71
-        Width = 263
-        Height = 23
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          60.8541666666667
-          476.25
-          187.854166666667
-          695.854166666667)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel2: TQRLabel
-        Left = 179
-        Top = 43
-        Width = 265
-        Height = 23
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          60.8541666666667
-          473.604166666667
-          113.770833333333
-          701.145833333333)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -19
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 14
-      end
-      object QRLabel4: TQRLabel
-        Left = 283
-        Top = 91
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          748.770833333333
-          240.770833333333
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'aktel1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel5: TQRLabel
-        Left = 282
-        Top = 111
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          746.125
-          293.6875
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'aktel2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
       object QRLabel6: TQRLabel
         Left = 246
         Top = 151
@@ -3228,53 +3033,6 @@ object ak_form: Tak_form
         Transparent = False
         WordWrap = True
         FontSize = 14
-      end
-      object QRImage1: TQRImage
-        Left = 17
-        Top = 35
-        Width = 153
-        Height = 153
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          404.8125
-          44.9791666666667
-          92.6041666666667
-          404.8125)
-      end
-      object QRLabel1: TQRLabel
-        Left = 282
-        Top = 131
-        Width = 163
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          746.125
-          346.604166666667
-          431.270833333333)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'aktel3'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
       end
       object ot_l: TQRLabel
         Left = 185

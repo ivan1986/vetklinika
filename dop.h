@@ -32,14 +32,9 @@ __published:	// IDE-managed Components
     TQuickRep *rep;
     TQRBand *TitleBand1;
     TQRBand *DetailBand1;
-    TQRImage *QRImage1;
-    TQRLabel *QRLabel2;
-    TQRLabel *QRLabel3;
-    TQRLabel *QRLabel4;
-    TQRLabel *QRLabel5;
-    TQRLabel *QRLabel1;
     TQRMemo *text;
     TPanel *Panel1;
+    TQRImage *head;
     TQRLabel *capt;
     TADOQuery *dop;
     TIntegerField *dopid;

@@ -13,12 +13,7 @@ Tdop_form *dop_form;
 __fastcall Tdop_form::Tdop_form(TComponent* Owner, bool ekg)
     : TForm(Owner)
 {
-    QRImage1->Canvas->Draw(0,0,Form1->logo_b->Picture->Graphic);
-    QRLabel2->Caption=Form1->fname1->Caption;
-    QRLabel3->Caption=Form1->fname2->Caption;
-    QRLabel4->Caption=Form1->amtel1->Caption;
-    QRLabel5->Caption=Form1->amtel2->Caption;
-    QRLabel1->Caption=Form1->amtel3->Caption;
+    head->Canvas->Draw(0,0,Form1->logo_b->Picture->Graphic);
     capt->Caption=ekg?"ЭКГ":"";
     Panel2->Caption=ekg?"ЭКГ":"Дополнительные данные";
     this->Caption=Panel2->Caption;

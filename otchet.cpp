@@ -14,13 +14,7 @@ TIniFile* inifile;
 __fastcall Totch_form::Totch_form(TComponent* Owner)
     : TForm(Owner),zero(false)
 {
-    QRImage1->Canvas->Draw(0,0,Form1->logo_s->Picture->Graphic);
-    Image1->Canvas->Draw(0,0,Form1->logo_s->Picture->Graphic);
-
-    Label20->Caption=Form1->fname1->Caption;
-    Label21->Caption=Form1->fname2->Caption;
-    QRLabel6->Caption=Form1->fname1->Caption;
-    QRLabel7->Caption=Form1->fname2->Caption;
+    head->Canvas->Draw(0,0,Form1->logo_b->Picture->Graphic);
 
     TDate x(Now());
     d->Text=x.FormatString("d");

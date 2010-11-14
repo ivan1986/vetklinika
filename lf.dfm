@@ -1,11 +1,11 @@
 object lf_form: Tlf_form
-  Left = 458
-  Top = 212
+  Left = 254
+  Top = 146
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1051#1077#1081#1082#1086#1092#1086#1088#1084#1091#1083#1072
   ClientHeight = 584
-  ClientWidth = 331
+  ClientWidth = 329
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -111,70 +111,6 @@ object lf_form: Tlf_form
     Font.Height = -15
     Font.Name = 'Arial'
     Font.Style = [fsBold, fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label6: TLabel
-    Left = 110
-    Top = 60
-    Width = 216
-    Height = 15
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'podp2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Arial'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label7: TLabel
-    Left = 110
-    Top = 46
-    Width = 216
-    Height = 16
-    Alignment = taRightJustify
-    AutoSize = False
-    Caption = 'podp1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Arial'
-    Font.Style = [fsItalic]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label8: TLabel
-    Left = 110
-    Top = 28
-    Width = 216
-    Height = 18
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Arial'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label9: TLabel
-    Left = 110
-    Top = 8
-    Width = 216
-    Height = 19
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
@@ -290,6 +226,22 @@ object lf_form: Tlf_form
         1486.95833333333
         2100.79166666667)
       BandType = rbTitle
+      object head: TQRImage
+        Left = 29
+        Top = 2
+        Width = 326
+        Height = 140
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          370.416666666667
+          76.7291666666667
+          5.29166666666667
+          862.541666666667)
+      end
       object QRLabel6: TQRLabel
         Left = 181
         Top = 96
@@ -320,22 +272,6 @@ object lf_form: Tlf_form
         Transparent = False
         WordWrap = True
         FontSize = 11
-      end
-      object QRImage1: TQRImage
-        Left = 33
-        Top = 28
-        Width = 105
-        Height = 105
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          277.8125
-          87.3125
-          74.0833333333333
-          277.8125)
       end
       object QRLabel1: TQRLabel
         Left = 45
@@ -2309,130 +2245,6 @@ object lf_form: Tlf_form
         WordWrap = True
         FontSize = 10
       end
-      object QRLabel2: TQRLabel
-        Left = 136
-        Top = 28
-        Width = 216
-        Height = 20
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          52.9166666666667
-          359.833333333333
-          74.0833333333333
-          571.5)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 12
-      end
-      object QRLabel3: TQRLabel
-        Left = 136
-        Top = 48
-        Width = 216
-        Height = 19
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          50.2708333333333
-          359.833333333333
-          127
-          571.5)
-        Alignment = taCenter
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -15
-        Font.Name = 'Arial'
-        Font.Style = [fsBold, fsUnderline]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 11
-      end
-      object QRLabel4: TQRLabel
-        Left = 136
-        Top = 66
-        Width = 216
-        Height = 16
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          42.3333333333333
-          359.833333333333
-          174.625
-          571.5)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'podp1'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = [fsItalic]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 9
-      end
-      object QRLabel5: TQRLabel
-        Left = 136
-        Top = 80
-        Width = 216
-        Height = 16
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          42.3333333333333
-          359.833333333333
-          211.666666666667
-          571.5)
-        Alignment = taRightJustify
-        AlignToBand = False
-        AutoSize = False
-        AutoStretch = False
-        Caption = 'podp2'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = [fsItalic]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        FontSize = 9
-      end
       object text: TQRLabel
         Left = 36
         Top = 485
@@ -2474,22 +2286,6 @@ object lf_form: Tlf_form
     Caption = #1055#1077#1095#1072#1090#1100
     TabOrder = 1
     OnClick = Button1Click
-  end
-  object QRImage2: TQRImage
-    Left = 4
-    Top = 9
-    Width = 105
-    Height = 105
-    Frame.Color = clBlack
-    Frame.DrawTop = False
-    Frame.DrawBottom = False
-    Frame.DrawLeft = False
-    Frame.DrawRight = False
-    Size.Values = (
-      277.8125
-      10.5833333333333
-      23.8125
-      277.8125)
   end
   object QRImage4: TQRImage
     Left = 10
@@ -3484,84 +3280,84 @@ object lf_form: Tlf_form
     Top = 176
     Width = 225
     Height = 21
-    TabOrder = 5
+    TabOrder = 4
   end
   object Edit1: TEdit
     Left = 141
     Top = 248
     Width = 65
     Height = 21
-    TabOrder = 6
+    TabOrder = 5
   end
   object Edit2: TEdit
     Left = 141
     Top = 280
     Width = 65
     Height = 21
-    TabOrder = 7
+    TabOrder = 6
   end
   object Edit3: TEdit
     Left = 141
     Top = 312
     Width = 65
     Height = 21
-    TabOrder = 8
+    TabOrder = 7
   end
   object Edit4: TEdit
     Left = 141
     Top = 344
     Width = 65
     Height = 21
-    TabOrder = 9
+    TabOrder = 8
   end
   object Edit5: TEdit
     Left = 141
     Top = 376
     Width = 65
     Height = 21
-    TabOrder = 10
+    TabOrder = 9
   end
   object Edit6: TEdit
     Left = 141
     Top = 408
     Width = 65
     Height = 21
-    TabOrder = 11
+    TabOrder = 10
   end
   object Edit7: TEdit
     Left = 141
     Top = 440
     Width = 65
     Height = 21
-    TabOrder = 12
+    TabOrder = 11
   end
   object d: TEdit
     Left = 150
     Top = 104
     Width = 25
     Height = 21
-    TabOrder = 14
+    TabOrder = 13
   end
   object m: TEdit
     Left = 184
     Top = 104
     Width = 73
     Height = 21
-    TabOrder = 15
+    TabOrder = 14
   end
   object y: TEdit
     Left = 272
     Top = 104
     Width = 25
     Height = 21
-    TabOrder = 16
+    TabOrder = 15
   end
   object memo: TMemo
     Left = 11
     Top = 472
     Width = 308
     Height = 49
-    TabOrder = 13
+    TabOrder = 12
   end
   object lft: TADOQuery
     Connection = Form1.connect

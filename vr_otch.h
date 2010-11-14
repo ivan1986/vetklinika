@@ -24,23 +24,16 @@ __published:	// IDE-managed Components
     TLabel *Label34;
     TButton *Button1;
     TADOQuery *zap;
-    TFloatField *zapsumma;
-    TADOTable *vr;
     TDataSource *zapds;
-    TIntegerField *zapvrach_id;
-    TAutoIncField *vrid;
-    TWideStringField *vrname;
-    TStringField *zapname;
     TQuickRep *rep;
     TQRBand *TitleBand1;
     TQRBand *DetailBand1;
     TQRBand *SummaryBand1;
     TQRLabel *QRLabel1;
-    TQRLabel *QRLabel2;
+    TQRLabel *title;
     TQRLabel *pr;
-    TQRLabel *QRLabel3;
-    TQRLabel *QRLabel4;
-    TIntegerField *zapcnt;
+    TQRLabel *name;
+    TQRLabel *count;
     TQRLabel *QRLabel5;
     TQRLabel *QRLabel6;
     TQRLabel *QRLabel7;
@@ -54,11 +47,16 @@ __published:	// IDE-managed Components
     TQRLabel *prc;
     TQRDBText *QRDBText3;
     TQRLabel *prs;
+    TComboBox *type;
+    TWideStringField *zapname;
+    TFloatField *zapcnt;
+    TFloatField *zapsumma;
     void __fastcall FormKeyPress(TObject *Sender, char &Key);
     void __fastcall FormCreate(TObject *Sender);
     void __fastcall Button1Click(TObject *Sender);
     void __fastcall prcPrint(TObject *sender, AnsiString &Value);
     void __fastcall prsPrint(TObject *sender, AnsiString &Value);
+    void __fastcall QRDBText2Print(TObject *sender, AnsiString &Value);
 private:	// User declarations
     int sum,c;
 public:		// User declarations

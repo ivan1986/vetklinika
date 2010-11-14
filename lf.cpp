@@ -13,16 +13,7 @@ Tlf_form *lf_form;
 __fastcall Tlf_form::Tlf_form(TComponent* Owner)
     : TForm(Owner)
 {
-    QRImage1->Canvas->Draw(0,0,Form1->logo_s->Picture->Graphic);
-    QRImage2->Canvas->Draw(0,0,Form1->logo_s->Picture->Graphic);
-    QRLabel2->Caption=Form1->fname1->Caption;
-    QRLabel3->Caption=Form1->fname2->Caption;
-    QRLabel4->Caption=Form1->podp1->Caption;
-    QRLabel5->Caption=Form1->podp2->Caption;
-    Label9->Caption=Form1->fname1->Caption;
-    Label8->Caption=Form1->fname2->Caption;
-    Label7->Caption=Form1->podp1->Caption;
-    Label6->Caption=Form1->podp2->Caption;
+    head->Canvas->Draw(0,0,Form1->logo_s->Picture->Graphic);
 
     TDate x(Form1->table->FieldByName("date")->AsDateTime);
     d->Text=x.FormatString("d");

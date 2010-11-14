@@ -21,13 +21,7 @@ class Tam_form : public TForm
 __published:	// IDE-managed Components
     TQuickRep *QuickRep1;
     TQRBand *TitleBand1;
-    TQRLabel *QRLabel3;
-    TQRLabel *QRLabel2;
-    TQRLabel *QRLabel4;
-    TQRLabel *QRLabel5;
     TQRLabel *QRLabel6;
-    TQRImage *QRImage1;
-    TQRLabel *QRLabel1;
     TQRLabel *ot_l;
     TQRLabel *QRLabel7;
     TQRDBText *QRDBText1;
@@ -55,17 +49,10 @@ __published:	// IDE-managed Components
     TEdit *vr;
     TLabel *Label2;
     TLabel *Label5;
-    TLabel *Label6;
-    TLabel *Label7;
-    TLabel *Label8;
-    TLabel *Label9;
-    TImage *Image1;
-    TLabel *Label1;
     TStringGrid *grid;
     TImage *Image2;
     TLabel *Label14;
     TShape *Shape1;
-    TADOQuery *am;
     TButton *Button1;
     TShape *Shape2;
     TQRShape *QRShape5;
@@ -74,6 +61,8 @@ __published:	// IDE-managed Components
     TShape *Shape4;
     TMemo *memo;
     TQRLabel *text;
+    TADOQuery *am;
+    TQRImage *head;
     void __fastcall FormActivate(TObject *Sender);
     void __fastcall FormDeactivate(TObject *Sender);
     void __fastcall Button1Click(TObject *Sender);

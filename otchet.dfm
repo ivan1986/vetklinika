@@ -1,6 +1,6 @@
 object otch_form: Totch_form
-  Left = 465
-  Top = 252
+  Left = 62
+  Top = 88
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1054#1090#1095#1077#1090' '#1087#1086' '#1074#1072#1082#1094#1080#1085#1072#1094#1080#1080
@@ -22,13 +22,6 @@ object otch_form: Totch_form
     Top = 6
     Width = 452
     Height = 641
-  end
-  object Image1: TImage
-    Left = 18
-    Top = 33
-    Width = 119
-    Height = 124
-    Transparent = True
   end
   object Label10: TLabel
     Left = 180
@@ -212,38 +205,6 @@ object otch_form: Totch_form
     Caption = #1042#1088#1072#1095#1080
     Transparent = True
   end
-  object Label20: TLabel
-    Left = 151
-    Top = 27
-    Width = 254
-    Height = 22
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label21: TLabel
-    Left = 151
-    Top = 55
-    Width = 254
-    Height = 19
-    Alignment = taCenter
-    AutoSize = False
-    Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
   object QuickRep1: TQuickRep
     Left = 479
     Top = 7
@@ -306,9 +267,25 @@ object otch_form: Totch_form
         1939.39583333333
         2770.1875)
       BandType = rbTitle
+      object head: TQRImage
+        Left = 7
+        Top = 5
+        Width = 510
+        Height = 140
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          370.416666666667
+          18.5208333333333
+          13.2291666666667
+          1349.375)
+      end
       object ot_l: TQRLabel
-        Left = 180
-        Top = 116
+        Left = 181
+        Top = 133
         Width = 296
         Height = 25
         Frame.Color = clBlack
@@ -318,8 +295,8 @@ object otch_form: Totch_form
         Frame.DrawRight = False
         Size.Values = (
           66.1458333333333
-          476.25
-          306.916666666667
+          478.895833333333
+          351.895833333333
           783.166666666667)
         Alignment = taCenter
         AlignToBand = False
@@ -337,25 +314,9 @@ object otch_form: Totch_form
         WordWrap = True
         FontSize = 12
       end
-      object QRImage1: TQRImage
-        Left = 29
-        Top = 26
-        Width = 136
-        Height = 137
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          362.479166666667
-          76.7291666666667
-          68.7916666666667
-          359.833333333333)
-      end
       object QRLabel1: TQRLabel
-        Left = 298
-        Top = 81
+        Left = 302
+        Top = 99
         Width = 50
         Height = 30
         Frame.Color = clBlack
@@ -365,8 +326,8 @@ object otch_form: Totch_form
         Frame.DrawRight = False
         Size.Values = (
           79.375
-          788.458333333333
-          214.3125
+          799.041666666667
+          261.9375
           132.291666666667)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -890,68 +851,6 @@ object otch_form: Totch_form
         Pen.Color = clGray
         Shape = qrsRectangle
       end
-    end
-    object QRLabel6: TQRLabel
-      Left = 221
-      Top = 67
-      Width = 265
-      Height = 23
-      Frame.Color = clBlack
-      Frame.DrawTop = False
-      Frame.DrawBottom = False
-      Frame.DrawLeft = False
-      Frame.DrawRight = False
-      Size.Values = (
-        60.8541666666667
-        584.729166666667
-        177.270833333333
-        701.145833333333)
-      Alignment = taCenter
-      AlignToBand = False
-      AutoSize = False
-      AutoStretch = False
-      Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clGray
-      Font.Height = -19
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = False
-      WordWrap = True
-      FontSize = 14
-    end
-    object QRLabel7: TQRLabel
-      Left = 222
-      Top = 92
-      Width = 263
-      Height = 23
-      Frame.Color = clBlack
-      Frame.DrawTop = False
-      Frame.DrawBottom = False
-      Frame.DrawLeft = False
-      Frame.DrawRight = False
-      Size.Values = (
-        60.8541666666667
-        587.375
-        243.416666666667
-        695.854166666667)
-      Alignment = taCenter
-      AlignToBand = False
-      AutoSize = False
-      AutoStretch = False
-      Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clGray
-      Font.Height = -16
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = False
-      WordWrap = True
-      FontSize = 12
     end
   end
   object d: TEdit

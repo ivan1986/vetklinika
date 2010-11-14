@@ -22,7 +22,6 @@ __published:	// IDE-managed Components
     TQuickRep *QuickRep1;
     TQRBand *TitleBand1;
     TQRLabel *QRLabel6;
-    TQRImage *QRImage1;
     TQRLabel *QRLabel1;
     TQRDBText *QRDBText1;
     TQRShape *QRShape1;
@@ -32,7 +31,6 @@ __published:	// IDE-managed Components
     TButton *Button1;
     TQRLabel *vrach;
     TQRShape *QRShape3;
-    TQRImage *QRImage2;
     TQRLabel *QRLabel13;
     TQRImage *QRImage3;
     TQRImage *QRImage4;
@@ -63,10 +61,6 @@ __published:	// IDE-managed Components
     TLabel *Label3;
     TLabel *Label4;
     TLabel *Label5;
-    TLabel *Label6;
-    TLabel *Label7;
-    TLabel *Label8;
-    TLabel *Label9;
     TLabel *Label10;
     TLabel *Label11;
     TEdit *d;
@@ -77,12 +71,9 @@ __published:	// IDE-managed Components
     TLabel *Label13;
     TDBText *DBText3;
     TDBText *DBText4;
-    TQRLabel *QRLabel2;
-    TQRLabel *QRLabel3;
-    TQRLabel *QRLabel4;
-    TQRLabel *QRLabel5;
     TMemo *memo;
     TQRLabel *text;
+    TQRImage *head;
     void __fastcall Button1Click(TObject *Sender);
     void __fastcall FormActivate(TObject *Sender);
     void __fastcall FormDeactivate(TObject *Sender);

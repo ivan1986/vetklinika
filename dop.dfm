@@ -20,8 +20,8 @@ object dop_form: Tdop_form
   object dop_text: TDBMemo
     Left = 0
     Top = 19
-    Width = 640
-    Height = 342
+    Width = 623
+    Height = 290
     Align = alClient
     DataField = 'text'
     DataSource = dopds
@@ -32,8 +32,8 @@ object dop_form: Tdop_form
   end
   object Panel3: TPanel
     Left = 0
-    Top = 361
-    Width = 640
+    Top = 309
+    Width = 623
     Height = 41
     Align = alBottom
     TabOrder = 1
@@ -51,7 +51,7 @@ object dop_form: Tdop_form
   object Panel2: TPanel
     Left = 0
     Top = 0
-    Width = 640
+    Width = 623
     Height = 19
     Align = alTop
     BevelOuter = bvNone
@@ -59,8 +59,8 @@ object dop_form: Tdop_form
     TabOrder = 2
   end
   object Panel1: TPanel
-    Left = 820
-    Top = 76
+    Left = 867
+    Top = 112
     Width = 811
     Height = 1142
     Caption = 'Panel1'
@@ -128,176 +128,21 @@ object dop_form: Tdop_form
           465.666666666667
           1899.70833333333)
         BandType = rbTitle
-        object QRImage1: TQRImage
-          Left = 50
-          Top = 11
-          Width = 153
-          Height = 153
+        object head: TQRImage
+          Left = 99
+          Top = 2
+          Width = 510
+          Height = 140
           Frame.Color = clBlack
           Frame.DrawTop = False
           Frame.DrawBottom = False
           Frame.DrawLeft = False
           Frame.DrawRight = False
           Size.Values = (
-            404.8125
-            132.291666666667
-            29.1041666666667
-            404.8125)
-        end
-        object QRLabel2: TQRLabel
-          Left = 330
-          Top = 19
-          Width = 265
-          Height = 23
-          Frame.Color = clBlack
-          Frame.DrawTop = False
-          Frame.DrawBottom = False
-          Frame.DrawLeft = False
-          Frame.DrawRight = False
-          Size.Values = (
-            60.8541666666667
-            873.125
-            50.2708333333333
-            701.145833333333)
-          Alignment = taCenter
-          AlignToBand = False
-          AutoSize = False
-          AutoStretch = False
-          Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 1'
-          Color = clWhite
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clGray
-          Font.Height = -19
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          Transparent = False
-          WordWrap = True
-          FontSize = 14
-        end
-        object QRLabel3: TQRLabel
-          Left = 331
-          Top = 47
-          Width = 263
-          Height = 23
-          Frame.Color = clBlack
-          Frame.DrawTop = False
-          Frame.DrawBottom = False
-          Frame.DrawLeft = False
-          Frame.DrawRight = False
-          Size.Values = (
-            60.8541666666667
-            875.770833333333
-            124.354166666667
-            695.854166666667)
-          Alignment = taCenter
-          AlignToBand = False
-          AutoSize = False
-          AutoStretch = False
-          Caption = #1085#1072#1079#1074#1072#1085#1080#1077' '#1082#1083#1080#1085#1080#1082#1080' 2'
-          Color = clWhite
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clGray
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          Transparent = False
-          WordWrap = True
-          FontSize = 12
-        end
-        object QRLabel4: TQRLabel
-          Left = 500
-          Top = 92
-          Width = 163
-          Height = 20
-          Frame.Color = clBlack
-          Frame.DrawTop = False
-          Frame.DrawBottom = False
-          Frame.DrawLeft = False
-          Frame.DrawRight = False
-          Size.Values = (
-            52.9166666666667
-            1322.91666666667
-            243.416666666667
-            431.270833333333)
-          Alignment = taRightJustify
-          AlignToBand = False
-          AutoSize = False
-          AutoStretch = False
-          Caption = 'amtel1'
-          Color = clWhite
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clGray
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          Transparent = False
-          WordWrap = True
-          FontSize = 12
-        end
-        object QRLabel5: TQRLabel
-          Left = 500
-          Top = 112
-          Width = 163
-          Height = 20
-          Frame.Color = clBlack
-          Frame.DrawTop = False
-          Frame.DrawBottom = False
-          Frame.DrawLeft = False
-          Frame.DrawRight = False
-          Size.Values = (
-            52.9166666666667
-            1322.91666666667
-            296.333333333333
-            431.270833333333)
-          Alignment = taRightJustify
-          AlignToBand = False
-          AutoSize = False
-          AutoStretch = False
-          Caption = 'amtel2'
-          Color = clWhite
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clGray
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          Transparent = False
-          WordWrap = True
-          FontSize = 12
-        end
-        object QRLabel1: TQRLabel
-          Left = 500
-          Top = 132
-          Width = 163
-          Height = 20
-          Frame.Color = clBlack
-          Frame.DrawTop = False
-          Frame.DrawBottom = False
-          Frame.DrawLeft = False
-          Frame.DrawRight = False
-          Size.Values = (
-            52.9166666666667
-            1322.91666666667
-            349.25
-            431.270833333333)
-          Alignment = taRightJustify
-          AlignToBand = False
-          AutoSize = False
-          AutoStretch = False
-          Caption = 'amtel3'
-          Color = clWhite
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clGray
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          Transparent = False
-          WordWrap = True
-          FontSize = 12
+            370.416666666667
+            261.9375
+            5.29166666666667
+            1349.375)
         end
         object capt: TQRLabel
           Left = 312

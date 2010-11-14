@@ -3,9 +3,9 @@ object vrach_otch: Tvrach_otch
   Top = 139
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = #1043#1077#1085#1077#1088#1072#1094#1080#1103' '#1086#1090#1095#1077#1090#1072' '#1076#1077#1103#1090#1077#1083#1100#1085#1080#1089#1090#1080' '#1074#1088#1072#1095#1077#1081
-  ClientHeight = 65
-  ClientWidth = 315
+  Caption = #1043#1077#1085#1077#1088#1072#1094#1080#1080' '#1086#1090#1095#1077#1090#1086#1074
+  ClientHeight = 67
+  ClientWidth = 261
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -52,10 +52,10 @@ object vrach_otch: Tvrach_otch
     TabOrder = 1
   end
   object Button1: TButton
-    Left = 176
-    Top = 16
+    Left = 143
+    Top = 32
     Width = 105
-    Height = 25
+    Height = 23
     Caption = #1057#1092#1086#1088#1084#1080#1088#1086#1074#1072#1090#1100
     TabOrder = 2
     OnClick = Button1Click
@@ -64,7 +64,7 @@ object vrach_otch: Tvrach_otch
     Left = 8
     Top = 72
     Width = 794
-    Height = 1123
+    Height = 265
     Frame.Color = clBlack
     Frame.DrawTop = False
     Frame.DrawBottom = False
@@ -123,10 +123,10 @@ object vrach_otch: Tvrach_otch
         304.270833333333
         1899.70833333333)
       BandType = rbTitle
-      object QRLabel2: TQRLabel
-        Left = 248
+      object title: TQRLabel
+        Left = 228
         Top = 16
-        Width = 207
+        Width = 264
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -135,12 +135,12 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          656.166666666667
+          603.25
           42.3333333333333
-          547.6875)
-        Alignment = taLeftJustify
+          698.5)
+        Alignment = taCenter
         AlignToBand = False
-        AutoSize = True
+        AutoSize = False
         AutoStretch = False
         Caption = #1054#1090#1095#1077#1090' '#1087#1086' '#1088#1072#1073#1086#1090#1077' '#1074#1088#1072#1095#1077#1081' '#1079#1072' '#1087#1077#1088#1080#1086#1076
         Color = clWhite
@@ -149,7 +149,7 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object pr: TQRLabel
-        Left = 248
+        Left = 250
         Top = 40
         Width = 209
         Height = 17
@@ -160,7 +160,7 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          656.166666666667
+          661.458333333333
           105.833333333333
           552.979166666667)
         Alignment = taCenter
@@ -173,7 +173,7 @@ object vrach_otch: Tvrach_otch
         WordWrap = True
         FontSize = 10
       end
-      object QRLabel3: TQRLabel
+      object name: TQRLabel
         Left = 56
         Top = 88
         Width = 31
@@ -198,10 +198,10 @@ object vrach_otch: Tvrach_otch
         WordWrap = True
         FontSize = 10
       end
-      object QRLabel4: TQRLabel
-        Left = 328
-        Top = 88
-        Width = 96
+      object count: TQRLabel
+        Left = 276
+        Top = 87
+        Width = 140
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -210,12 +210,12 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          867.833333333334
-          232.833333333333
-          254)
-        Alignment = taLeftJustify
+          730.25
+          230.1875
+          370.416666666667)
+        Alignment = taRightJustify
         AlignToBand = False
-        AutoSize = True
+        AutoSize = False
         AutoStretch = False
         Caption = #1050#1086#1083'-'#1074#1086' '#1087#1088#1080#1077#1084#1086#1074
         Color = clWhite
@@ -365,14 +365,15 @@ object vrach_otch: Tvrach_otch
         Color = clWhite
         DataSet = zap
         DataField = 'cnt'
+        OnPrint = QRDBText2Print
         Transparent = False
         WordWrap = True
         FontSize = 10
       end
       object prc: TQRLabel
-        Left = 464
+        Left = 441
         Top = 0
-        Width = 34
+        Width = 63
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -381,9 +382,9 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1227.66666666667
+          1166.8125
           0
-          89.9583333333333)
+          166.6875)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = False
@@ -610,54 +611,42 @@ object vrach_otch: Tvrach_otch
       end
     end
   end
+  object type: TComboBox
+    Left = 143
+    Top = 10
+    Width = 105
+    Height = 21
+    Style = csDropDownList
+    ItemHeight = 13
+    ItemIndex = 0
+    TabOrder = 4
+    Text = #1042#1088#1072#1095#1080
+    Items.Strings = (
+      #1042#1088#1072#1095#1080
+      #1055#1088#1077#1087#1072#1088#1072#1090#1099
+      #1055#1088#1086#1076#1072#1078#1080)
+  end
   object zap: TADOQuery
-    Active = True
     Connection = Form1.connect
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
-      
-        'SELECT view1.vrach_id, count(view1.sum) as [cnt], Sum(view1.sum)' +
-        ' AS [summa] '
-      'FROM view1 '
-      'GROUP BY vrach_id')
+      'SELECT name, SUM(count) AS [cnt], SUM(st) AS [summa] '
+      'FROM sales_sv AS sv '
+      'INNER JOIN sales AS s ON sv.id_sales=s.nomer '
+      'WHERE sv.id IN (SELECT a.nomer FROM amb AS a '
+      ') GROUP BY name')
     Left = 320
     Top = 8
-    object zapname: TStringField
-      FieldKind = fkLookup
+    object zapname: TWideStringField
       FieldName = 'name'
-      LookupDataSet = vr
-      LookupKeyFields = 'id'
-      LookupResultField = 'name'
-      KeyFields = 'vrach_id'
       Size = 50
-      Lookup = True
     end
-    object zapcnt: TIntegerField
+    object zapcnt: TFloatField
       FieldName = 'cnt'
     end
     object zapsumma: TFloatField
       FieldName = 'summa'
-    end
-    object zapvrach_id: TIntegerField
-      FieldName = 'vrach_id'
-    end
-  end
-  object vr: TADOTable
-    Active = True
-    Connection = Form1.connect
-    CursorType = ctStatic
-    MasterSource = zapds
-    TableName = 'vrachi'
-    Left = 360
-    Top = 8
-    object vrid: TAutoIncField
-      FieldName = 'id'
-      ReadOnly = True
-    end
-    object vrname: TWideStringField
-      FieldName = 'name'
-      Size = 50
     end
   end
   object zapds: TDataSource

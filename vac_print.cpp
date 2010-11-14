@@ -13,12 +13,7 @@ Tvac_prn *vac_prn;
 __fastcall Tvac_prn::Tvac_prn(TComponent* Owner)
     : TForm(Owner)
 {
-    QRImage1->Canvas->Draw(0,0,Form1->logo_s->Picture->Graphic);
-    QRLabel2->Caption=Form1->fname1->Caption;
-    QRLabel3->Caption=Form1->fname2->Caption;
-    QRLabel4->Caption=Form1->podp1->Caption;
-    QRLabel5->Caption=Form1->podp2->Caption;
-
+    head->Canvas->Draw(0,0,Form1->logo_b->Picture->Graphic);
 
     Qman->Close();
     Qman->SQL->Clear();

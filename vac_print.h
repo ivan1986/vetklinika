@@ -21,13 +21,8 @@ __published:	// IDE-managed Components
     TQRShape *QRShape5;
     TQRShape *QRShape1;
     TQRLabel *QRLabel6;
-    TQRLabel *QRLabel5;
-    TQRLabel *QRLabel4;
-    TQRLabel *QRLabel3;
-    TQRLabel *QRLabel2;
     TQRLabel *QRLabel13;
     TQRLabel *QRLabel12;
-    TQRImage *QRImage1;
     TQRDBText *QRDBText12;
     TQRDBText *QRDBText10;
     TQRShape *QRShape2;
@@ -58,7 +53,6 @@ __published:	// IDE-managed Components
     TIntegerField *Qsalesst;
     TADOQuery *Qprep;
     TWideStringField *Qprepname;
-    TWideStringField *Qprepdoza;
     TIntegerField *Qprepst;
     TADOQuery *Qmnman;
     TWideStringField *Qmnmanname;
@@ -109,6 +103,9 @@ __published:	// IDE-managed Components
     TQRLabel *QRLabel23;
     TDataSource *tbl;
     TQRLabel *QRLabel25;
+    TFloatField *Qprepdoza;
+    TQRImage *head;
+    TQRImage *QRImage1;
     void __fastcall FormCreate(TObject *Sender);
     void __fastcall repsAddReports(TObject *Sender);
 private:	// User declarations

@@ -21,17 +21,11 @@ class Tuz_form : public TForm
 __published:	// IDE-managed Components
     TShape *Shape2;
     TADOQuery *uz;
-    TLabel *Label9;
-    TLabel *Label8;
-    TLabel *Label7;
-    TLabel *Label6;
     TLabel *Label5;
     TLabel *Label4;
     TLabel *Label3;
     TLabel *Label2;
     TLabel *Label14;
-    TLabel *Label1;
-    TImage *Image1;
     TShape *Shape1;
     TEdit *vr;
     TDBText *DBText3;
@@ -39,13 +33,7 @@ __published:	// IDE-managed Components
     TButton *Button1;
     TQuickRep *QuickRep1;
     TQRBand *TitleBand1;
-    TQRLabel *QRLabel3;
-    TQRLabel *QRLabel2;
-    TQRLabel *QRLabel4;
-    TQRLabel *QRLabel5;
     TQRLabel *QRLabel6;
-    TQRImage *QRImage1;
-    TQRLabel *QRLabel1;
     TQRLabel *QRLabel7;
     TQRDBText *QRDBText1;
     TQRShape *QRShape1;
@@ -188,6 +176,7 @@ __published:	// IDE-managed Components
     TQRDBText *QRDBText5;
     TQRLabel *QRLabel22;
     TQRMemo *mpmemo;
+    TQRImage *head;
     void __fastcall FormActivate(TObject *Sender);
     void __fastcall FormDeactivate(TObject *Sender);
     void __fastcall Button1Click(TObject *Sender);

@@ -31,6 +31,12 @@ __fastcall TForm1::TForm1(TComponent* Owner)
     : TForm(Owner)
 {
     static about *x=new about(false);
+    AnsiString logoB = ExtractFilePath(Application->ExeName)+"logoB.jpg";
+    AnsiString logoS = ExtractFilePath(Application->ExeName)+"logoS.jpg";
+    if (FileExists(logoB))
+        this->logo_b->Picture->LoadFromFile(logoB);
+    if (FileExists(logoS))
+        this->logo_s->Picture->LoadFromFile(logoS);
 }
 //---------------------------------------------------------------------------
 
@@ -1148,6 +1154,38 @@ void __fastcall TForm1::N7Click(TObject *Sender)
 void __fastcall TForm1::vr_otchClick(TObject *Sender)
 {
     delete new Tvrach_otch(NULL);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::files_btnClick(TObject *Sender)
+{
+    AnsiString dir = ExtractFilePath(Application->ExeName)+"files";
+    if (!this->createDir(dir)) return;
+    dir = dir + "\\" + table->FieldByName("nomer")->AsString;
+    if (!this->createDir(dir)) return;
+    ShellExecute(NULL,"open",dir.c_str(),NULL,"",SW_SHOW);
+}
+//---------------------------------------------------------------------------
+
+bool __fastcall TForm1::createDir(AnsiString dir)
+{
+    if (!DirectoryExists(dir))
+        if (!CreateDir(dir))
+        {
+            MessageBox(NULL,
+                (AnsiString("Не могу содзать каталог ")+dir).c_str(),
+                "Ошибка",MB_OK|MB_ICONERROR);
+            return false;
+        }
+    return true;
+}
+
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::decsep(TObject *Sender, char &Key)
+{
+    if (Key == '.' || Key == ',')
+        Key = DecimalSeparator;
 }
 //---------------------------------------------------------------------------
 // вставляет новую запись в конец журнала и копирует фио,

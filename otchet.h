@@ -19,8 +19,6 @@ class Totch_form : public TForm
 {
 __published:	// IDE-managed Components
     TQuickRep *QuickRep1;
-    TQRImage *QRImage1;
-    TImage *Image1;
     TLabel *Label10;
     TEdit *d;
     TLabel *Label11;
@@ -81,11 +79,8 @@ __published:	// IDE-managed Components
     TQRShape *QRShape3;
     TQRShape *QRShape2;
     TQRShape *QRShape4;
-    TLabel *Label20;
-    TLabel *Label21;
     TEdit *jiv;
-    TQRLabel *QRLabel6;
-    TQRLabel *QRLabel7;
+    TQRImage *head;
     void __fastcall Button1Click(TObject *Sender);
     void __fastcall vrExit(TObject *Sender);
 private:	// User declarations
