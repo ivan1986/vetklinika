@@ -48,17 +48,21 @@ __published:	// IDE-managed Components
     TQRDBText *QRDBText3;
     TQRLabel *prs;
     TComboBox *type;
+    TQRLabel *doza_l;
+    TQRDBText *doza_f;
+    TQRLabel *pr_sd;
     TWideStringField *zapname;
-    TFloatField *zapcnt;
+    TFloatField *zapdoza;
     TFloatField *zapsumma;
+    TIntegerField *zapcnt;
     void __fastcall FormKeyPress(TObject *Sender, char &Key);
     void __fastcall FormCreate(TObject *Sender);
     void __fastcall Button1Click(TObject *Sender);
     void __fastcall prcPrint(TObject *sender, AnsiString &Value);
     void __fastcall prsPrint(TObject *sender, AnsiString &Value);
-    void __fastcall QRDBText2Print(TObject *sender, AnsiString &Value);
 private:	// User declarations
     int sum,c;
+    float doz;
 public:		// User declarations
     __fastcall Tvrach_otch(TComponent* Owner);
 };

@@ -38,16 +38,18 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
     {
         title->Caption = "Отчет по работе врачей за период";
         name->Caption = "Врач";
-        count->Caption = "Кол-во приемов";
+        doza_l->Enabled = false;
+        doza_f->Enabled = false;
+        pr_sd->Enabled = false;
         sql =
-"SELECT Sum(1.0) AS [cnt], Sum(sum) AS [summa] "
+"SELECT count(*) AS [cnt], Sum(1.0) AS [doza], Sum(sum) AS [summa] "
 "FROM view1, vrachi "
 "WHERE (vrachi.id=view1.vrach_id) "
 "AND   (view1.sum > 0)" //баг аксеса (почему - хз, но так заработало)
 "AND   (view1.date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "AND   (view1.date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) ";
         sql2 =
-"SELECT name, Sum(1.0) AS [cnt], Sum(sum) AS [summa] "
+"SELECT name, count(*) AS [cnt], Sum(1.0) AS [doza], Sum(sum) AS [summa] "
 "FROM view1, vrachi "
 "WHERE (vrachi.id=view1.vrach_id) "
 "AND   (view1.sum > 0)" //потому что гладиолус
@@ -60,9 +62,12 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
     {
         title->Caption = "Отчет по использованию препаратов за период";
         name->Caption = "Препарат";
-        count->Caption = "Всего";
+        doza_l->Caption = "Доза";
+        doza_l->Enabled = true;
+        doza_f->Enabled = true;
+        pr_sd->Enabled = true;
         sql =
-"SELECT SUM(doza) AS [cnt], SUM(st) AS [summa] "
+"SELECT count(*) AS [cnt], SUM(doza) AS [doza], SUM(st) AS [summa] "
 "FROM lec_sv AS sv "
 "INNER JOIN lec AS l ON sv.id_lec=l.nomer "
 "WHERE sv.id IN (SELECT a.nomer FROM amb AS a "
@@ -70,7 +75,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 "AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 ")";
         sql2 =
-"SELECT name, SUM(doza) AS [cnt], SUM(st) AS [summa] "
+"SELECT name, count(*) AS [cnt], SUM(doza) AS [doza], SUM(st) AS [summa] "
 "FROM lec_sv AS sv "
 "INNER JOIN lec AS l ON sv.id_lec=l.nomer "
 "WHERE sv.id IN (SELECT a.nomer FROM amb AS a "
@@ -83,9 +88,12 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
     {
         title->Caption = "Отчет по продажам за период";
         name->Caption = "Товар";
-        count->Caption = "Кол-во";
+        doza_l->Caption = "Кол-во";
+        doza_l->Enabled = true;
+        doza_f->Enabled = true;
+        pr_sd->Enabled = true;
         sql =
-"SELECT SUM(count) AS [cnt], SUM(st) AS [summa] "
+"SELECT count(*) AS [cnt], SUM(count) AS [doza], SUM(st) AS [summa] "
 "FROM sales_sv AS sv "
 "INNER JOIN sales AS s ON sv.id_sales=s.nomer "
 "WHERE sv.id IN (SELECT a.nomer FROM amb AS a "
@@ -93,7 +101,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 "AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 ")";
         sql2 =
-"SELECT name, SUM(count) AS [cnt], SUM(st) AS [summa] "
+"SELECT name, count(*) AS [cnt], SUM(count) AS [doza], SUM(st) AS [summa] "
 "FROM sales_sv AS sv "
 "INNER JOIN sales AS s ON sv.id_sales=s.nomer "
 "WHERE sv.id IN (SELECT a.nomer FROM amb AS a "
@@ -115,11 +123,12 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
     if (x->RecordCount>0)
     {
         sum=x->FieldByName("summa")->AsFloat;
-        c  =x->FieldByName("cnt")  ->AsFloat;
+        doz=x->FieldByName("doza")->AsFloat;
+        c  =x->FieldByName("cnt")  ->AsInteger;
     }
     else
     {
-        sum=c=0;
+        sum=doz=c=0;
     }
 
     x->Close();
@@ -132,6 +141,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
     zap->Open();
 
     pr_sc->Caption=c;
+    pr_sd->Caption=FormatFloat("0.00",doz);
     pr_ss->Caption=sum;
 
     rep->Preview();
@@ -140,7 +150,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 
 void __fastcall Tvrach_otch::prcPrint(TObject *sender, AnsiString &Value)
 {
-    Value=FormatFloat("0",
+    Value=FormatFloat("0.00",
         zap->FieldByName("cnt")->AsFloat*100/(c>0?c:1));
     Value+="%";
 }
@@ -148,16 +158,10 @@ void __fastcall Tvrach_otch::prcPrint(TObject *sender, AnsiString &Value)
 
 void __fastcall Tvrach_otch::prsPrint(TObject *sender, AnsiString &Value)
 {
-    Value=FormatFloat("0",
+    Value=FormatFloat("0.00",
         zap->FieldByName("summa")->AsFloat*100/(sum>0?sum:1));
     Value+="%";
 }
 //---------------------------------------------------------------------------
 
-void __fastcall Tvrach_otch::QRDBText2Print(TObject *sender,
-      AnsiString &Value)
-{
-    Value=FormatFloat("0", zap->FieldByName("cnt")->AsFloat);
-}
-//---------------------------------------------------------------------------
 

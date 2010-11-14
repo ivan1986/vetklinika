@@ -4,8 +4,8 @@ object vrach_otch: Tvrach_otch
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1043#1077#1085#1077#1088#1072#1094#1080#1080' '#1086#1090#1095#1077#1090#1086#1074
-  ClientHeight = 67
-  ClientWidth = 261
+  ClientHeight = 583
+  ClientWidth = 913
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -64,7 +64,7 @@ object vrach_otch: Tvrach_otch
     Left = 8
     Top = 72
     Width = 794
-    Height = 265
+    Height = 1123
     Frame.Color = clBlack
     Frame.DrawTop = False
     Frame.DrawBottom = False
@@ -109,7 +109,7 @@ object vrach_otch: Tvrach_otch
       Left = 38
       Top = 38
       Width = 718
-      Height = 115
+      Height = 110
       Frame.Color = clBlack
       Frame.DrawTop = False
       Frame.DrawBottom = False
@@ -120,7 +120,7 @@ object vrach_otch: Tvrach_otch
       ForceNewColumn = False
       ForceNewPage = False
       Size.Values = (
-        304.270833333333
+        291.041666666667
         1899.70833333333)
       BandType = rbTitle
       object title: TQRLabel
@@ -199,9 +199,9 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object count: TQRLabel
-        Left = 276
+        Left = 236
         Top = 87
-        Width = 140
+        Width = 96
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -210,9 +210,9 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          730.25
+          624.416666666667
           230.1875
-          370.416666666667)
+          254)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = False
@@ -224,7 +224,7 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object QRLabel5: TQRLabel
-        Left = 560
+        Left = 583
         Top = 88
         Width = 42
         Height = 17
@@ -235,7 +235,7 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1481.66666666667
+          1542.52083333333
           232.833333333333
           111.125)
         Alignment = taLeftJustify
@@ -249,7 +249,7 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object QRLabel6: TQRLabel
-        Left = 456
+        Left = 381
         Top = 88
         Width = 50
         Height = 17
@@ -260,7 +260,7 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1206.5
+          1008.0625
           232.833333333333
           132.291666666667)
         Alignment = taLeftJustify
@@ -274,7 +274,7 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object QRLabel7: TQRLabel
-        Left = 632
+        Left = 641
         Top = 88
         Width = 50
         Height = 17
@@ -285,7 +285,7 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1672.16666666667
+          1695.97916666667
           232.833333333333
           132.291666666667)
         Alignment = taLeftJustify
@@ -298,12 +298,37 @@ object vrach_otch: Tvrach_otch
         WordWrap = True
         FontSize = 10
       end
+      object doza_l: TQRLabel
+        Left = 478
+        Top = 88
+        Width = 59
+        Height = 17
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          44.9791666666667
+          1264.70833333333
+          232.833333333333
+          156.104166666667)
+        Alignment = taRightJustify
+        AlignToBand = False
+        AutoSize = False
+        AutoStretch = False
+        Caption = #1044#1086#1079#1072
+        Color = clWhite
+        Transparent = False
+        WordWrap = True
+        FontSize = 10
+      end
     end
     object DetailBand1: TQRBand
       Left = 38
-      Top = 153
+      Top = 148
       Width = 718
-      Height = 24
+      Height = 18
       Frame.Color = clBlack
       Frame.DrawTop = False
       Frame.DrawBottom = False
@@ -314,7 +339,7 @@ object vrach_otch: Tvrach_otch
       ForceNewColumn = False
       ForceNewPage = False
       Size.Values = (
-        63.5
+        47.625
         1899.70833333333)
       BandType = rbDetail
       object QRDBText1: TQRDBText
@@ -344,7 +369,7 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object QRDBText2: TQRDBText
-        Left = 352
+        Left = 267
         Top = 0
         Width = 65
         Height = 17
@@ -355,7 +380,7 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          931.333333333333
+          706.4375
           0
           171.979166666667)
         Alignment = taRightJustify
@@ -365,15 +390,14 @@ object vrach_otch: Tvrach_otch
         Color = clWhite
         DataSet = zap
         DataField = 'cnt'
-        OnPrint = QRDBText2Print
         Transparent = False
         WordWrap = True
         FontSize = 10
       end
       object prc: TQRLabel
-        Left = 441
+        Left = 385
         Top = 0
-        Width = 63
+        Width = 46
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -382,9 +406,9 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1166.8125
+          1018.64583333333
           0
-          166.6875)
+          121.708333333333)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = False
@@ -397,9 +421,9 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object QRDBText3: TQRDBText
-        Left = 528
+        Left = 552
         Top = 0
-        Width = 73
+        Width = 72
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -408,9 +432,9 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1397
+          1460.5
           0
-          193.145833333333)
+          190.5)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = False
@@ -423,9 +447,9 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object prs: TQRLabel
-        Left = 648
+        Left = 639
         Top = 0
-        Width = 34
+        Width = 52
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -434,9 +458,9 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1714.5
+          1690.6875
           0
-          89.9583333333333)
+          137.583333333333)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = False
@@ -448,12 +472,38 @@ object vrach_otch: Tvrach_otch
         WordWrap = True
         FontSize = 10
       end
+      object doza_f: TQRDBText
+        Left = 489
+        Top = 0
+        Width = 47
+        Height = 17
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          44.9791666666667
+          1293.8125
+          0
+          124.354166666667)
+        Alignment = taRightJustify
+        AlignToBand = False
+        AutoSize = False
+        AutoStretch = False
+        Color = clWhite
+        DataSet = zap
+        DataField = 'doza'
+        Transparent = False
+        WordWrap = True
+        FontSize = 10
+      end
     end
     object SummaryBand1: TQRBand
       Left = 38
-      Top = 177
+      Top = 166
       Width = 718
-      Height = 40
+      Height = 34
       Frame.Color = clBlack
       Frame.DrawTop = False
       Frame.DrawBottom = False
@@ -464,12 +514,12 @@ object vrach_otch: Tvrach_otch
       ForceNewColumn = False
       ForceNewPage = False
       Size.Values = (
-        105.833333333333
+        89.9583333333333
         1899.70833333333)
       BandType = rbSummary
       object QRLabel1: TQRLabel
         Left = 56
-        Top = 16
+        Top = 10
         Width = 38
         Height = 17
         Frame.Color = clBlack
@@ -480,7 +530,7 @@ object vrach_otch: Tvrach_otch
         Size.Values = (
           44.9791666666667
           148.166666666667
-          42.3333333333333
+          26.4583333333333
           100.541666666667)
         Alignment = taLeftJustify
         AlignToBand = False
@@ -493,9 +543,9 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object QRLabel8: TQRLabel
-        Left = 464
-        Top = 16
-        Width = 34
+        Left = 371
+        Top = 10
+        Width = 61
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -504,12 +554,12 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1227.66666666667
-          42.3333333333333
-          89.9583333333333)
-        Alignment = taLeftJustify
+          981.604166666667
+          26.4583333333333
+          161.395833333333)
+        Alignment = taRightJustify
         AlignToBand = False
-        AutoSize = True
+        AutoSize = False
         AutoStretch = False
         Caption = '100%'
         Color = clWhite
@@ -518,9 +568,9 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object QRLabel9: TQRLabel
-        Left = 648
-        Top = 16
-        Width = 34
+        Left = 640
+        Top = 10
+        Width = 53
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -529,12 +579,12 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1714.5
-          42.3333333333333
-          89.9583333333333)
-        Alignment = taLeftJustify
+          1693.33333333333
+          26.4583333333333
+          140.229166666667)
+        Alignment = taRightJustify
         AlignToBand = False
-        AutoSize = True
+        AutoSize = False
         AutoStretch = False
         Caption = '100%'
         Color = clWhite
@@ -543,8 +593,8 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object pr_sc: TQRLabel
-        Left = 344
-        Top = 16
+        Left = 260
+        Top = 10
         Width = 73
         Height = 17
         Frame.Color = clBlack
@@ -554,8 +604,8 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          910.166666666667
-          42.3333333333333
+          687.916666666667
+          26.4583333333333
           193.145833333333)
         Alignment = taRightJustify
         AlignToBand = False
@@ -568,9 +618,9 @@ object vrach_otch: Tvrach_otch
         FontSize = 10
       end
       object pr_ss: TQRLabel
-        Left = 528
-        Top = 16
-        Width = 73
+        Left = 561
+        Top = 10
+        Width = 63
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -579,9 +629,9 @@ object vrach_otch: Tvrach_otch
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1397
-          42.3333333333333
-          193.145833333333)
+          1484.3125
+          26.4583333333333
+          166.6875)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = False
@@ -594,7 +644,7 @@ object vrach_otch: Tvrach_otch
       end
       object QRShape1: TQRShape
         Left = 32
-        Top = 8
+        Top = 5
         Width = 657
         Height = 1
         Frame.Color = clBlack
@@ -605,9 +655,34 @@ object vrach_otch: Tvrach_otch
         Size.Values = (
           2.64583333333333
           84.6666666666667
-          21.1666666666667
+          13.2291666666667
           1738.3125)
         Shape = qrsHorLine
+      end
+      object pr_sd: TQRLabel
+        Left = 473
+        Top = 10
+        Width = 63
+        Height = 17
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          44.9791666666667
+          1251.47916666667
+          26.4583333333333
+          166.6875)
+        Alignment = taRightJustify
+        AlignToBand = False
+        AutoSize = False
+        AutoStretch = False
+        Caption = 'pr_sd'
+        Color = clWhite
+        Transparent = False
+        WordWrap = True
+        FontSize = 10
       end
     end
   end
@@ -627,13 +702,16 @@ object vrach_otch: Tvrach_otch
       #1055#1088#1086#1076#1072#1078#1080)
   end
   object zap: TADOQuery
+    Active = True
     Connection = Form1.connect
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
-      'SELECT name, SUM(count) AS [cnt], SUM(st) AS [summa] '
-      'FROM sales_sv AS sv '
-      'INNER JOIN sales AS s ON sv.id_sales=s.nomer '
+      
+        'SELECT name, count(*) AS [cnt], SUM(doza) AS [doza], SUM(st) AS ' +
+        '[summa] '
+      'FROM lec_sv AS sv '
+      'INNER JOIN lec AS s ON sv.id_lec=s.nomer '
       'WHERE sv.id IN (SELECT a.nomer FROM amb AS a '
       ') GROUP BY name')
     Left = 320
@@ -642,11 +720,18 @@ object vrach_otch: Tvrach_otch
       FieldName = 'name'
       Size = 50
     end
-    object zapcnt: TFloatField
+    object zapcnt: TIntegerField
       FieldName = 'cnt'
+    end
+    object zapdoza: TFloatField
+      FieldName = 'doza'
+      DisplayFormat = '0.00'
+      Precision = 2
     end
     object zapsumma: TFloatField
       FieldName = 'summa'
+      DisplayFormat = '0'
+      Precision = 2
     end
   end
   object zapds: TDataSource
