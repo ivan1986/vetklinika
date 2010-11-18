@@ -42,14 +42,34 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
         doza_l->Enabled = false;
         doza_f->Enabled = false;
         pr_sd->Enabled = false;
-        sql =
+        if (this->vac)
+        {
+            sql =
+"SELECT count(*) AS [cnt], Sum(1.0) AS [doza], Sum(sum) AS [summa] "
+"FROM view2, vrachi "
+"WHERE (vrachi.id=view2.vrach_id) "
+"AND   (view2.sum > 0)" //баг аксеса (почему - хз, но так заработало)
+"AND   (view2.date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+"AND   (view2.date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) ";
+            sql2 =
+"SELECT name, count(*) AS [cnt], Sum(1.0) AS [doza], Sum(sum) AS [summa] "
+"FROM view2, vrachi "
+"WHERE (vrachi.id=view2.vrach_id) "
+"AND   (view2.sum > 0)" //потому что гладиолус
+"AND   (view2.date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+"AND   (view2.date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+"GROUP BY name";
+        }
+        else
+        {
+            sql =
 "SELECT count(*) AS [cnt], Sum(1.0) AS [doza], Sum(sum) AS [summa] "
 "FROM view1, vrachi "
 "WHERE (vrachi.id=view1.vrach_id) "
 "AND   (view1.sum > 0)" //баг аксеса (почему - хз, но так заработало)
 "AND   (view1.date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "AND   (view1.date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) ";
-        sql2 =
+            sql2 =
 "SELECT name, count(*) AS [cnt], Sum(1.0) AS [doza], Sum(sum) AS [summa] "
 "FROM view1, vrachi "
 "WHERE (vrachi.id=view1.vrach_id) "
@@ -57,6 +77,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 "AND   (view1.date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "AND   (view1.date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "GROUP BY name";
+        }
     }
 
     if (index == 1)
@@ -67,7 +88,28 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
         doza_l->Enabled = true;
         doza_f->Enabled = true;
         pr_sd->Enabled = true;
-        sql =
+        if (this->vac)
+        {
+            sql =
+"SELECT count(*) AS [cnt], SUM(doza) AS [doza], SUM(st) AS [summa] "
+"FROM vlec_sv AS sv "
+"INNER JOIN lec AS l ON sv.id_lec=l.nomer "
+"WHERE sv.id IN (SELECT a.nomer FROM vac AS a "
+"WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+"AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+")";
+            sql2 =
+"SELECT name, count(*) AS [cnt], SUM(doza) AS [doza], SUM(st) AS [summa] "
+"FROM vlec_sv AS sv "
+"INNER JOIN lec AS l ON sv.id_lec=l.nomer "
+"WHERE sv.id IN (SELECT a.nomer FROM vac AS a "
+"WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+"AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+") GROUP BY name";
+        }
+        else
+        {
+            sql =
 "SELECT count(*) AS [cnt], SUM(doza) AS [doza], SUM(st) AS [summa] "
 "FROM lec_sv AS sv "
 "INNER JOIN lec AS l ON sv.id_lec=l.nomer "
@@ -75,7 +117,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 "WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 ")";
-        sql2 =
+            sql2 =
 "SELECT name, count(*) AS [cnt], SUM(doza) AS [doza], SUM(st) AS [summa] "
 "FROM lec_sv AS sv "
 "INNER JOIN lec AS l ON sv.id_lec=l.nomer "
@@ -83,6 +125,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 "WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 ") GROUP BY name";
+        }
     }
 
     if (index == 2)
@@ -93,7 +136,28 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
         doza_l->Enabled = true;
         doza_f->Enabled = true;
         pr_sd->Enabled = true;
-        sql =
+        if (this->vac)
+        {
+            sql =
+"SELECT count(*) AS [cnt], SUM(count) AS [doza], SUM(st) AS [summa] "
+"FROM vsales_sv AS sv "
+"INNER JOIN sales AS s ON sv.id_sales=s.nomer "
+"WHERE sv.id IN (SELECT a.nomer FROM vac AS a "
+"WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+"AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+")";
+            sql2 =
+"SELECT name, count(*) AS [cnt], SUM(count) AS [doza], SUM(st) AS [summa] "
+"FROM vsales_sv AS sv "
+"INNER JOIN sales AS s ON sv.id_sales=s.nomer "
+"WHERE sv.id IN (SELECT a.nomer FROM vac AS a "
+"WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+"AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
+") GROUP BY name";
+        }
+        else
+        {
+            sql =
 "SELECT count(*) AS [cnt], SUM(count) AS [doza], SUM(st) AS [summa] "
 "FROM sales_sv AS sv "
 "INNER JOIN sales AS s ON sv.id_sales=s.nomer "
@@ -101,7 +165,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 "WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 ")";
-        sql2 =
+            sql2 =
 "SELECT name, count(*) AS [cnt], SUM(count) AS [doza], SUM(st) AS [summa] "
 "FROM sales_sv AS sv "
 "INNER JOIN sales AS s ON sv.id_sales=s.nomer "
@@ -109,6 +173,7 @@ void __fastcall Tvrach_otch::Button1Click(TObject *Sender)
 "WHERE (date>=#"+fot->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 "AND   (date<=#"+fdo->Date.FormatString("mm'/'dd'/'yyyy")+"#) "
 ") GROUP BY name";
+        }
     }
 
     pr->Caption="от "+fot->Date.FormatString("dd.mm.yyyy")+

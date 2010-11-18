@@ -1,11 +1,11 @@
 object vrach_otch: Tvrach_otch
-  Left = 199
-  Top = 139
+  Left = 505
+  Top = 372
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1043#1077#1085#1077#1088#1072#1094#1080#1080' '#1086#1090#1095#1077#1090#1086#1074
-  ClientHeight = 583
-  ClientWidth = 913
+  ClientHeight = 69
+  ClientWidth = 261
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
