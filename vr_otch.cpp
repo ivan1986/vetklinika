@@ -11,9 +11,10 @@
 #pragma resource "*.dfm"
 Tvrach_otch *vrach_otch;
 //---------------------------------------------------------------------------
-__fastcall Tvrach_otch::Tvrach_otch(TComponent* Owner)
+__fastcall Tvrach_otch::Tvrach_otch(TComponent* Owner, bool vac)
     : TForm(Owner)
 {
+    this->vac = vac;
 }
 //---------------------------------------------------------------------------
 void __fastcall Tvrach_otch::FormKeyPress(TObject *Sender, char &Key)

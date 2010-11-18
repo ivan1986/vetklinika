@@ -63,8 +63,9 @@ __published:	// IDE-managed Components
 private:	// User declarations
     int sum,c;
     float doz;
+    bool vac;
 public:		// User declarations
-    __fastcall Tvrach_otch(TComponent* Owner);
+    __fastcall Tvrach_otch(TComponent* Owner, bool vac);
 };
 //---------------------------------------------------------------------------
 extern PACKAGE Tvrach_otch *vrach_otch;

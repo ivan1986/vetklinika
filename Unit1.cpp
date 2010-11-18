@@ -1154,7 +1154,13 @@ void __fastcall TForm1::N7Click(TObject *Sender)
 #include "vr_otch.h"
 void __fastcall TForm1::vr_otchClick(TObject *Sender)
 {
-    delete new Tvrach_otch(NULL);
+    delete new Tvrach_otch(NULL, false);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::vr_otch_vacClick(TObject *Sender)
+{
+    delete new Tvrach_otch(NULL, true);
 }
 //---------------------------------------------------------------------------
 

@@ -337,6 +337,7 @@ __published:	// IDE-managed Components
     TStringField *vactvrach;
     TRxDBLookupCombo *RxDBLookupCombo2;
     TLabel *Label19;
+    TButton *vr_otch_vac;
     void __fastcall tableAfterScroll(TDataSet *DataSet);
     void __fastcall N2Click(TObject *Sender);
     void __fastcall tableAfterInsert(TDataSet *DataSet);
@@ -418,6 +419,7 @@ __published:	// IDE-managed Components
     void __fastcall files_btnClick(TObject *Sender);
     bool __fastcall createDir(AnsiString dir);
     void __fastcall decsep(TObject *Sender, char &Key);
+    void __fastcall vr_otch_vacClick(TObject *Sender);
 private:	// User declarations
     int deleted_npp;
 public:		// User declarations

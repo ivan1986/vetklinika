@@ -22,9 +22,9 @@ object Form1: TForm1
     Top = 0
     Width = 1022
     Height = 617
-    ActivePage = TabSheet1
+    ActivePage = TabSheet2
     Align = alClient
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     TabStop = False
     object TabSheet1: TTabSheet
@@ -837,9 +837,9 @@ object Form1: TForm1
           OnClick = bh_btnClick
         end
         object dop_btn: TButton
-          Left = 496
+          Left = 376
           Top = 3
-          Width = 55
+          Width = 50
           Height = 17
           Caption = #1055#1088#1086#1095#1077#1077
           TabOrder = 3
@@ -891,9 +891,9 @@ object Form1: TForm1
           OnClick = uzi_btnClick
         end
         object files_btn: TButton
-          Left = 559
+          Left = 434
           Top = 3
-          Width = 91
+          Width = 54
           Height = 17
           Caption = #1060#1072#1081#1083#1099
           TabOrder = 7
@@ -1209,9 +1209,9 @@ object Form1: TForm1
           object otch_btn: TButton
             Left = 564
             Top = 5
-            Width = 75
+            Width = 133
             Height = 25
-            Caption = #1054#1090#1095#1077#1090
+            Caption = #1054#1090#1095#1077#1090' '#1087#1086' '#1074#1072#1082#1094#1080#1085#1072#1094#1080#1080
             TabOrder = 1
             OnClick = otch_btnClick
           end
@@ -1230,6 +1230,15 @@ object Form1: TForm1
             Height = 21
             NumGlyphs = 2
             TabOrder = 3
+          end
+          object vr_otch_vac: TButton
+            Left = 707
+            Top = 5
+            Width = 97
+            Height = 25
+            Caption = #1054#1090#1095#1077#1090#1099
+            TabOrder = 4
+            OnClick = vr_otch_vacClick
           end
         end
       end
@@ -2000,7 +2009,6 @@ object Form1: TForm1
     Top = 475
   end
   object dopt: TADOTable
-    Active = True
     Connection = connect
     CursorType = ctStatic
     AfterPost = sqlRefrAfterPost
