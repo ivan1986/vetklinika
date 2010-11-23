@@ -1,6 +1,6 @@
 object uz_form: Tuz_form
-  Left = 248
-  Top = 28
+  Left = 422
+  Top = 138
   BorderStyle = bsSingle
   Caption = #1059#1047#1048
   ClientHeight = 751
@@ -28,9 +28,9 @@ object uz_form: Tuz_form
   object Label5: TLabel
     Left = 166
     Top = 100
-    Width = 281
+    Width = 270
     Height = 22
-    Caption = #1059#1083#1100#1090#1088#1072#1079#1074#1091#1082#1086#1074#1086#1086#1077' '#1080#1089#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077
+    Caption = #1059#1083#1100#1090#1088#1072#1079#1074#1091#1082#1086#1074#1086#1077' '#1080#1089#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -19
@@ -584,7 +584,7 @@ object uz_form: Tuz_form
       object QRLabel6: TQRLabel
         Left = 310
         Top = 159
-        Width = 282
+        Width = 271
         Height = 24
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -595,12 +595,12 @@ object uz_form: Tuz_form
           63.5
           820.208333333334
           420.6875
-          746.125)
+          717.020833333333)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
         AutoStretch = False
-        Caption = #1059#1083#1100#1090#1088#1072#1079#1074#1091#1082#1086#1074#1086#1086#1077' '#1080#1089#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077
+        Caption = #1059#1083#1100#1090#1088#1072#1079#1074#1091#1082#1086#1074#1086#1077' '#1080#1089#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray

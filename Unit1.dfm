@@ -160,7 +160,7 @@ object Form1: TForm1
               Align = alTop
               Alignment = taLeftJustify
               BevelOuter = bvNone
-              Caption = '   '#1052#1085#1086#1075#1086#1082#1088'. '#1055#1086#1074#1090#1086#1088#1103#1077#1084#1099#1077' '#1084#1072#1085#1080#1087#1091#1083#1103#1094#1080#1080'      '#1050#1086#1083'-'#1074#1086
+              Caption = '   '#1052#1085#1086#1075#1086#1082#1088'. '#1087#1086#1074#1090#1086#1088#1103#1077#1084#1099#1077' '#1084#1072#1085#1080#1087#1091#1083#1103#1094#1080#1080'       '#1050#1086#1083'-'#1074#1086
               TabOrder = 1
               object man_nav: TDBNavigator
                 Left = 280
@@ -1202,7 +1202,7 @@ object Form1: TForm1
             Height = 21
             AutoDropDown = True
             Style = csDropDownList
-            ItemHeight = 13
+            ItemHeight = 0
             Sorted = True
             TabOrder = 0
           end
