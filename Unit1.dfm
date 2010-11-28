@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 98
-  Top = 91
+  Left = 154
+  Top = 136
   Width = 1030
   Height = 738
   Caption = #1046#1091#1088#1085#1072#1083#1099
@@ -1202,7 +1202,7 @@ object Form1: TForm1
             Height = 21
             AutoDropDown = True
             Style = csDropDownList
-            ItemHeight = 0
+            ItemHeight = 13
             Sorted = True
             TabOrder = 0
           end
@@ -2009,6 +2009,7 @@ object Form1: TForm1
     Top = 475
   end
   object dopt: TADOTable
+    Active = True
     Connection = connect
     CursorType = ctStatic
     AfterPost = sqlRefrAfterPost
@@ -2203,6 +2204,7 @@ object Form1: TForm1
     end
     object lec_svdoza: TFloatField
       FieldName = 'doza'
+      DisplayFormat = '0.0###'
       Precision = 2
     end
     object lec_svst: TIntegerField
@@ -2672,6 +2674,7 @@ object Form1: TForm1
     end
     object vlec_svdoza: TFloatField
       FieldName = 'doza'
+      DisplayFormat = '0.0###'
       Precision = 2
     end
     object vlec_svvacnomer: TAutoIncField

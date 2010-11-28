@@ -1,6 +1,6 @@
 object print_form: Tprint_form
-  Left = 329
-  Top = 10
+  Left = 174
+  Top = 79
   Width = 604
   Height = 721
   Caption = #1055#1077#1095#1072#1090#1100
@@ -1787,6 +1787,7 @@ object print_form: Tprint_form
     end
     object Qprepdoza: TFloatField
       FieldName = 'doza'
+      DisplayFormat = '0.0###'
       Precision = 2
     end
     object Qprepst: TIntegerField

@@ -2057,6 +2057,7 @@ object vac_prn: Tvac_prn
     end
     object Qprepdoza: TFloatField
       FieldName = 'doza'
+      DisplayFormat = '0.0###'
       Precision = 2
     end
     object Qprepst: TIntegerField
